@@ -2,6 +2,34 @@ body {
   margin: 0;
 }
 
+div.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+div.navbar li {
+  float: left;
+}
+
+div.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+div.navbar li a:hover:not(.active) {
+  background-color: #d9d9d9;
+}
+
+div.navbar .active {
+  background-color: #ca005d;
+}
+
 /*code for (eventual) columns
 adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*/
 * {
@@ -16,25 +44,25 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
 
 .side {
   flex: 45%;
-  background-color: aqua;
+  background-color: #f3f3f3;
   padding: 20px;
 }
 
 .main {
   flex: 55%;
-  background-color: aliceblue;
+  background-color: #f3f3f3;
   padding: 20px;
 }
 
 .side-alt{
   flex: 55%;
-  background-color: red;
+  background-color: #e6e6e6;
   padding: 20px;
 }
 
 .main-alt{
   flex: 45%;
-  background-color: green;
+  background-color: #e6e6e6;
   padding: 20px;
 }
 
