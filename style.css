@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+}
+
+/*code for (eventual) columns
+adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*/
+* {
+  box-sizing: border-box;
+}
+
+/* Column container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.side {
+  flex: 45%;
+  background-color: aqua;
+  padding: 20px;
+}
+
+.main {
+  flex: 55%;
+  background-color: aliceblue;
+  padding: 20px;
+}
+
+.side-alt{
+  flex: 55%;
+  background-color: red;
+  padding: 20px;
+}
+
+.main-alt{
+  flex: 45%;
+  background-color: green;
+  padding: 20px;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media (max-width: 700px) {
+
+  .row,
+  .navbar {
+    flex-direction: column;
+  }
+}
