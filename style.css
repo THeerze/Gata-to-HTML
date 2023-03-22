@@ -1,36 +1,82 @@
 body {
-  margin: 0;
+  height: 125vh;
+  margin: 0px;
+  margin-top: 106px;
+  /* padding: 30px; */
+  background-size: cover;
+  font-family: sans-serif;
 }
 
-div.navbar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
+/*css for navbar */
+.navbar {
+  background-color: #d9d9d9;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0px;
+  height: 106px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 5px 0 black;
 }
 
-div.navbar li {
-  float: left;
+.navbar * {
+  display: inline;
 }
 
-div.navbar li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
+.navbar li {
+  margin: 20px;
+}
+
+.navbar li a {
+  color: #000000;
   text-decoration: none;
 }
 
-div.navbar li a:hover:not(.active) {
-  background-color: #d9d9d9;
+.navbar li a:hover {
+  color: #ca005d;
 }
 
-div.navbar .active {
+.navbar img.logo {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 50px;
+  width: 50px;
+  height: 50px;
+  /* margin-right: 20px; */
+  /* margin-top: 15px;    if you want it vertically middle of the navbar. */
+}
+
+
+
+/*css for header*/
+.header {
   background-color: #ca005d;
+  height: 525px;
 }
 
-/*code for (eventual) columns
+.header h2 {
+  color: #ffffff;
+  font-size: 96px;
+  padding-left: 58px;
+  padding-top: 273px;
+  margin-bottom: 0px;
+}
+
+.header h4 {
+  color: #ffffff;
+  font-size: 48px;
+  margin-top: 0px;
+  padding-left: 58px;
+}
+
+
+
+
+
+
+
+/*columns for content attempt
 adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*/
 * {
   box-sizing: border-box;
@@ -44,25 +90,25 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
 
 .side {
   flex: 45%;
-  background-color: #f3f3f3;
+  background-color: aqua;
   padding: 20px;
 }
 
 .main {
   flex: 55%;
-  background-color: #f3f3f3;
+  background-color: aliceblue;
   padding: 20px;
 }
 
-.side-alt{
+.side-alt {
   flex: 55%;
-  background-color: #e6e6e6;
+  background-color: red;
   padding: 20px;
 }
 
-.main-alt{
+.main-alt {
   flex: 45%;
-  background-color: #e6e6e6;
+  background-color: green;
   padding: 20px;
 }
 
@@ -71,6 +117,6 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
 
   .row,
   .navbar {
-    flex-direction: column;
+      flex-direction: column;
   }
 }
