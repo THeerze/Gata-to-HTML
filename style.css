@@ -55,6 +55,7 @@ body {
   height: 525px;
 }
 
+/*header title*/
 .header h2 {
   color: #ffffff;
   font-size: 96px;
@@ -62,7 +63,7 @@ body {
   padding-top: 273px;
   margin-bottom: 0px;
 }
-
+/* header subtitle */
 .header h4 {
   color: #ffffff;
   font-size: 48px;
