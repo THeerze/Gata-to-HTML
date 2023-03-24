@@ -139,6 +139,36 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
   padding: 20px;
 }
 
+.rectangle1 {
+  width: 350px;
+  height: 600px;
+  position: relative;
+  left: 145px;
+  float: left;
+  background-color: lightgray;
+  border-radius: 30px;
+}
+
+.rectangle2 {
+  width: 350px;
+  height: 600px;
+  position: relative;
+  left: 195px;
+  float: left;
+  background-color: lightgray;
+  border-radius: 30px;
+}
+
+.rectangle3 {
+  width: 350px;
+  height: 600px;
+  position: relative;
+  left: 315px;
+  float: left;
+  background-color: lightgray;
+  border-radius: 30px;
+}
+
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media (max-width: 700px) {
 
