@@ -486,7 +486,7 @@ h5 {
   background-color: whitesmoke;
   height: 45vw;
   padding: 20px;
-  text-align: center;
+  text-align: left;
   font-family:'movavi_grotesqueblack_italic', sans-serif;
 }
 .greybox1B {
@@ -497,7 +497,7 @@ h5 {
   font-family:'Barlow Condensed';
   font-size: 3vw;
   font: 300;
-  text-align: center;
+  text-align: left;
 }
 .greybox2A {
   flex: 50%;
@@ -505,7 +505,7 @@ h5 {
   height: 45vw;
   padding: 30px;
   font-family:'Barlow Condensed';
-  text-align: center;
+  text-align: left;
   font-size: 3vw;
   font: 300;
 }
@@ -515,5 +515,25 @@ h5 {
   height: 45vw;
   padding: 25px;
   font-family:'movavi_grotesqueblack_italic', sans-serif;
-  text-align: center;
+  text-align: left;
+}
+.greybox3 {
+  background-color: whitesmoke;
+  height: 45vw;
+  padding: 30px;
+  width: auto;
+  font-family:'Barlow Condensed';
+  font-size: 3vw;
+  font: 300;
+  text-align: left;
+}
+.greybox4 {
+  background-color: #d9d9d9;
+  height: 45vw;
+  padding: 30px;
+  width: auto;
+  font-family:'Barlow Condensed';
+  font-size: 3vw;
+  font: 300;
+  text-align: left;
 }
