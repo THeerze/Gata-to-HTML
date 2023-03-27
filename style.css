@@ -480,18 +480,40 @@ h5 {
   padding-left: 20px;
 }
 
-/*css style for diana's about openkat page*/
+/*css style for diana's aboutopenkat page*/
 .greybox1A {
   flex: 50%;
   background-color: whitesmoke;
   height: 45vw;
   padding: 20px;
+  text-align: center;
   font-family:'movavi_grotesqueblack_italic', sans-serif;
 }
 .greybox1B {
   flex: 50%;
   background-color: whitesmoke;
   height: 45vw;
-  padding: 20px;
-  font-family:'Barlow Condensed', sans-serif;
+  padding: 30px;
+  font-family:'Barlow Condensed';
+  font-size: 3vw;
+  font: 300;
+  text-align: center;
+}
+.greybox2A {
+  flex: 50%;
+  background-color: #d9d9d9;
+  height: 45vw;
+  padding: 30px;
+  font-family:'Barlow Condensed';
+  text-align: center;
+  font-size: 3vw;
+  font: 300;
+}
+.greybox2B {
+  flex: 50%;
+  background-color: #d9d9d9;
+  height: 45vw;
+  padding: 25px;
+  font-family:'movavi_grotesqueblack_italic', sans-serif;
+  text-align: center;
 }
