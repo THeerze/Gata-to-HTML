@@ -282,3 +282,29 @@ h4.footer_subtitle a:hover {
   background-color: lightgray;
   border-radius: 30px;
 }
+
+/* body title */
+h4 {
+  color: #ca005d;
+  font-family:'movavi_grotesqueblack_italic', sans-serif;
+  font-size: 48px;
+  margin-top: 15px;
+  padding-left: 58px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.imgcontact {
+  width: 40%;
+  height:40%;
+  padding-left: 58px;
+}
+
+.text {
+  font-size: 20px;
+  padding-left: 20px;
+}
