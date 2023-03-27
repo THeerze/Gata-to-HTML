@@ -205,7 +205,7 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
 
 .main {
   flex: 55%;
-  height: 45vw;
+  height: 55vw;
   background-color: white;
   padding: 20px;
   font-family:'movavi_grotesqueblack_italic', sans-serif;
