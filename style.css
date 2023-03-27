@@ -473,3 +473,19 @@ h4 {
   font-size: 20px;
   padding-left: 20px;
 }
+
+/*css style for diana's about openkat page*/
+.greybox1A {
+  flex: 50%;
+  background-color: whitesmoke;
+  height: 45vw;
+  padding: 20px;
+  font-family:'movavi_grotesqueblack_italic', sans-serif;
+}
+.greybox1B {
+  flex: 50%;
+  background-color: whitesmoke;
+  height: 45vw;
+  padding: 20px;
+  font-family:'Barlow Condensed', sans-serif;
+}
