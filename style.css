@@ -457,6 +457,12 @@ h4 {
   padding-left: 58px;
 }
 
+h5 {
+  color: #000000;
+  font-family:'movavi_grotesqueblack_italic', sans-serif;
+  font-size: 18px;
+}
+
 .container {
   display: flex;
   align-items: center;
