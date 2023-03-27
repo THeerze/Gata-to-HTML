@@ -31,50 +31,123 @@ body {
   height: 125vh;
   margin: 0px;
   font-family: 'Barlow Condensed', sans-serif;
-  margin-top: 106px;
   /* padding: 30px; */
   background-size: cover;
 }
 
-/*css for navbar */
-.navbar {
-  background-color: #d9d9d9;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0px;
-  height: 106px;
-  display: flex;
-  align-items: center;
-  box-shadow: 0 0 5px 0 black;
-}
+/* following code for responsive navbar adapted from
+  https://www.makeuseof.com/responsive-navigation-bar-using-html-and-css/ */
 
-.navbar * {
-  display: inline;
-}
-
-.navbar li {
-  margin: 20px;
-}
-
-.navbar li a {
-  color: #000000;
-  text-decoration: none;
-}
-
-.navbar li a:hover {
-  color: #ca005d;
-}
-
-.navbar img.logo {
-  display: inline-block;
-  vertical-align: top;
-  margin-left: 50px;
-  width: 50px;
-  height: 50px;
-  /* margin-right: 20px; */
-  /* margin-top: 15px;    if you want it vertically middle of the navbar. */
-}
+  .navbar a {
+    text-decoration: none;
+  }
+  
+  .navbar li {
+    list-style: none;
+  }
+  
+  /* NAVBAR STYLING STARTS */
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #d9d9d9;
+    color: #000000;
+    box-shadow: 0 0 5px 0 black;
+  }
+  
+  .nav-links a {
+    color: #000000;
+  }
+  
+  /* LOGO */
+  .logo {
+    font-size: 32px;
+    margin-left: 3vw;
+  }
+  
+  .logo img {
+    display: inline-block;
+    vertical-align: top;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .logo a i {
+    color: #000000;
+    padding: 5px;
+    display: inline-block;
+  }
+  
+  /* NAVBAR MENU */
+  .menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+  }
+  
+  .menu li:hover {
+    /* background-color: #ca005d; */
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+  
+  .menu li:hover a {
+    color: #ca005d;
+  }
+  
+  .menu li {
+    padding: 5px 14px;
+  }
+  
+  /* DROPDOWN MENU */
+  .services {
+    position: relative;
+  }
+  
+  .dropdown {
+    background-color: #d9d9d9;
+    padding: 1em 0;
+    position: absolute;
+  
+    /*WITH RESPECT TO PARENT*/
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+  }
+  
+  .dropdown li+li {
+    margin-top: 10px;
+  }
+  
+  .dropdown li {
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+  }
+  
+  /* .dropdown li:hover {
+    background-color: #ca005d;
+  } */
+  
+  .services:hover .dropdown {
+    display: block;
+  }
+  
+  /*RESPONSIVE NAVBAR MENU STARTS*/
+  
+  /* CHECKBOX HACK */
+  input[type=checkbox] {
+    display: none;
+  }
+  
+  /*HAMBURGER MENU*/
+  .hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+  }
 
 
 
@@ -112,6 +185,8 @@ body {
 /*columns for content attempt
 adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*/
 * {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
@@ -182,6 +257,53 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media (max-width: 700px) {
 
+  /* For the navbar, adapted from https://www.makeuseof.com/responsive-navigation-bar-using-html-and-css/ */
+  .menu {
+    display: none;
+    position: absolute;
+    background-color: #d9d9d9;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+  }
+
+  .menu li:hover {
+    display: inline-block;
+    background-color: #ca005d;
+    transition: 0.3s ease;
+  }
+
+  .menu li+li {
+    margin-top: 12px;
+  }
+
+  .menu li:hover a {
+    color: #ffffff;
+    transition: 0.3s ease;
+  }
+
+  input[type=checkbox]:checked~.menu {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .dropdown {
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
+  }
+
+  .dropdown li:hover {
+    background-color: #ca005d;
+  }
+
+
+
+  /* For the website body */
   .row,
   .navbar {
     flex-direction: column;

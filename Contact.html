@@ -11,22 +11,43 @@
 </head>
 
 <body>
+    <!-- Navigation bar adapted from https://www.makeuseof.com/responsive-navigation-bar-using-html-and-css/ -->
     <nav class="navbar">
-        <img class="logo"
-            src="content/cat.png">
-        <ul>
-            <li>
-                <a href="home.html">OpenGÁTA</a>
-            </li>
-            <li>
-                <a href="aboutopenkat.html">About OpenKAT</a>
-            </li>
-            <li>
-                <a href="Experiences.html">Experiences</a>
-            </li>
-            <li>
-                <a href="Contact.html">Contact</a>
-            </li>
+
+        <!-- LOGO -->
+        <div class="logo">
+            <a href="index.html">
+                <img src="content/cat.png">
+                <i>
+                    OpenGÁTA
+                </i>
+            </a>
+        </div>
+
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+
+            <!-- USING CHECKBOX HACK -->
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+            <!-- NAVIGATION MENUS -->
+            <div class="menu">
+                <li><a href="aboutopenkat.html">About OpenKAT</a></li>
+                <li><a href="Experiences.html">Experiences</a></li>
+                <li class="services">
+                    <a href="Contact.html">Contact</a>
+
+                    <!-- DROPDOWN MENU -->
+                    <!-- <ul class="dropdown">
+                        <li><a href="/">Dropdown 1 </a></li>
+                        <li><a href="/">Dropdown 2</a></li>
+                        <li><a href="/">Dropdown 2</a></li>
+                        <li><a href="/">Dropdown 3</a></li>
+                        <li><a href="/">Dropdown 4</a></li>
+                    </ul> -->
+                </li>
+            </div>
         </ul>
     </nav>
 
