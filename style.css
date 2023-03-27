@@ -335,6 +335,7 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
   padding: 20px;
   color: #ca005d;
   font-weight: lighter;
+  text-align: left;
 }
 
 .footer_second {
@@ -362,17 +363,25 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
   font-weight: lighter;
 }
 
+.footer_subtitle{
+  font-size: 1vw;
+  line-height: small;
+  font: weight 300px;;
+  text-align: left;
+}
+
 .footer_subtitle a{
   color: #606060;
   text-decoration: none;
-  font-weight: lighter;
   font-style: italic;
-  font-size: larger;
 }
 
 h4.footer_subtitle a:hover {
   color: #888888
 }
+
+
+
 
 
 .rectangle1 {
