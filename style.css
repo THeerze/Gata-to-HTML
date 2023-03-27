@@ -251,3 +251,34 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
 h4.footer_subtitle a:hover {
   color: #888888
 }
+
+
+.rectangle1 {
+  width: 350px;
+  height: 600px;
+  position: relative;
+  left: 145px;
+  float: left;
+  background-color: lightgray;
+  border-radius: 30px;
+}
+
+.rectangle2 {
+  width: 350px;
+  height: 600px;
+  position: relative;
+  left: 195px;
+  float: left;
+  background-color: lightgray;
+  border-radius: 30px;
+}
+
+.rectangle3 {
+  width: 350px;
+  height: 600px;
+  position: relative;
+  left: 315px;
+  float: left;
+  background-color: lightgray;
+  border-radius: 30px;
+}
