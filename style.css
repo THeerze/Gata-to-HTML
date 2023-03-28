@@ -309,8 +309,8 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
 }
 
 
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media (max-width: 700px) {
+/* Responsive layout - when the screen is less than 768px wide, make the two columns stack on top of each other instead of next to each other */
+@media (max-width: 768px) {
 
   /* For the navbar, adapted from https://www.makeuseof.com/responsive-navigation-bar-using-html-and-css/ */
   .menu {
