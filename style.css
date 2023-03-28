@@ -488,38 +488,6 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
   border-radius: 2.8vw;
 }
 
-/* body title */
-h4 {
-  color: #ca005d;
-  font-family:'movavi_grotesqueblack_italic', sans-serif;
-  font-size: 4.6vw;
-  margin-top: 1.43vw;
-  padding-left: 5.5vw;
-}
-
-h5 {
-  color: #000000;
-  font-family:'movavi_grotesqueblack_italic', sans-serif;
-  font-size: 1.7vw;
-}
-
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center
-}
-
-.imgcontact {
-  width: 40%;
-  height:40%;
-  padding-left: 5.5vw;
-}
-
-.text {
-  font-size: 2vw;
-  padding-left: 2vw;
-}
-
 /*css style for diana's aboutopenkat page*/
 .greybox1A {
   /* flex: 50%; */
@@ -637,4 +605,61 @@ h5 {
 
 .button:hover {
   background-color: palevioletred;
+}
+
+/* body title */
+h4 {
+  color: #ca005d;
+  font-family:'movavi_grotesqueblack_italic', sans-serif;
+  font-size: 3.265vw;
+  margin-top: 1.020vw;
+  margin-bottom: 2.041vw;
+  padding-left: 3.946vw;
+}
+
+/* contact person title */
+h5 {
+  color: #ca005d;
+  font-family:'movavi_grotesqueblack', sans-serif;
+  font-size: 2.721vw;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+/* contact container */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.imgcontact img {
+  width: 30.612vw;
+  height: auto;
+  padding-left: 3.946vw;
+}
+
+.text {
+  font-family: 'Barlow', sans-serif;
+  font-size: 2.721vw;
+  padding-left: 2.041vw;
+  padding-right: 3.401vw;
+  margin-top: 0vw;
+}
+
+.side-alt2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20vw;
+
+  background: rgba(48, 48, 48, 0.12);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
