@@ -273,11 +273,9 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
   text-align: center;
 }
 
-.left_side_bottom {
-  flex: 35%;
-  height: 35vw;
-  background-color: white;
-  padding: 20px;
+.bottom_side img {
+  height: 12vw;
+  width: 25vw;
 }
 
 .middle_bottom {
@@ -285,13 +283,29 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
   height: 35vw;
   background-color: white;
   padding: 20px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
-.right_side_bottom {
+.middle_bottom img {
+  height: 5vw;
+  width: 25vw;
+}
+
+.bottom_left img {
+  height: 13vw;
+  width: 27vw;
+}
+
+.bottom_side {
   flex: 35%;
   height: 35vw;
   background-color: white;
   padding: 20px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 
@@ -353,7 +367,7 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
 
 /*css for footer */
 .footer {
-  box-shadow: 0 0 5px 0 black;
+  box-shadow: 0 0 0.2vw 0 black;
 }
 
 .footer {
@@ -361,7 +375,8 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
 }
 
 .footer li {
-  margin: 20px;
+  margin: 2.4vw;
+  list-style: none;
   margin-left: 0px;
 }
 
@@ -373,7 +388,7 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
   flex: 15%;
   background-color: #d9d9d9;
   height: 18vw;
-  padding: 20px;
+  padding: 2vw;
   color: #ca005d;
   font-weight: lighter;
   text-align: left;
@@ -382,15 +397,14 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
 .footer_empty {
   background-color: #d9d9d9;
   flex: 50%;
-  height: 18vw;
-  padding: 20px;
+  height: 18vw;*/
+  padding: 2vw;
 }
 
 .footer_subtitle {
   font-size: 1.5vw;
-  list-style: none;
   font-weight:300;
-  line-height: 2px;
+  line-height: 0.2vw;
 }
 
 .footer_subtitle a{
@@ -401,31 +415,35 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
 }
 
 .footer_socials {
-    font-size: 32px;
+    font-size: 3.9vw;
     margin-left: 3vw;
     vertical-align:bottom;
-    bottom: 0;
     display: flex;
-    justify-content: center;
-    margin-top: 10px;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    margin-top: 1.2vw;
+    position:relative;
+  }
+
+  .social_icons{
+    display:flex;
+    justify-content:flex-end;
+    align-items: flex-end;
   }
   
-  .footer_socials img {
+  .social_icons img {
     display: inline-block;
-    width: 40px;
-    height: 40px;
-    vertical-align: bottom;
-    margin: 0 10px;
+    width: 4vw;
+    height: 4vw;
+    margin: 0 01.2vw;
+    align-self: flex-end;
   }
   
   .footer_socials a i {
     color: #000000;
-    padding: 5px;
+    padding: 5vw;
     display: inline-block;
   }
-
-
-
 
 
 
