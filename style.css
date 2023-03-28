@@ -522,15 +522,20 @@ h5 {
 
 /*css style for diana's aboutopenkat page*/
 .greybox1A {
-  flex: 50%;
-  background-color: whitesmoke;
+  /* flex: 50%; */
   height: 45vw;
-  padding: 2vw;
-  text-align: left;
-  font-family:'Barlow Condensed';
+  background-color: whitesmoke;
+  padding: 1vw;
   font-size: 2.5vw;
-  font: 28vw;
+  padding: 2vw;
+  font-family:'Barlow Condensed', sans-serif;
+  font: 200;
 }
+
+.greybox1A img {
+  width: 45vw;
+}
+
 .greybox1B {
   flex: 50%;
   background-color: whitesmoke;
@@ -540,17 +545,29 @@ h5 {
   font-size: 2.5vw;
   font: 28vw;
   text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 .greybox2A {
   flex: 50%;
   background-color: #d9d9d9;
   height: 45vw;
   padding: 2.8vw;
   font-family:'Barlow Condensed';
-  text-align: left;
   font-size: 2.5vw;
   font: 28vw;
+  text-align: left;
 }
+
+.greybox2A p {
+  padding: 1.4vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .greybox2B {
   flex: 50%;
   background-color: #d9d9d9;
@@ -560,7 +577,16 @@ h5 {
   font-size: 2.5vw;
   font: 28vw;
   text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.greybox2B img {
+  width: 44vw;
+  
+}
+
 .greybox3 {
   background-color: whitesmoke;
   height: 35vw;
@@ -571,15 +597,29 @@ h5 {
   font: 28vw;
   text-align: left;
 }
+
+.greybox3 p {
+  padding: 1.4vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .greybox4 {
   background-color: #d9d9d9;
-  height: 35vw;
+  height: 40vw;
   padding: 2.8vw;
   width: auto;
   font-family:'Barlow Condensed';
   font-size: 2.5vw;
   font: 28vw;
   text-align: left;
+}
+
+.greybox4 p {
+  padding: 1.4vw;
+  display: flex;
+  align-items: center;
 }
 
 .button{
