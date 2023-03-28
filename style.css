@@ -309,8 +309,8 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
 }
 
 
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media (max-width: 700px) {
+/* Responsive layout - when the screen is less than 768px wide, make the two columns stack on top of each other instead of next to each other */
+@media (max-width: 768px) {
 
   /* For the navbar, adapted from https://www.makeuseof.com/responsive-navigation-bar-using-html-and-css/ */
   .menu {
@@ -387,7 +387,7 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
 .footer_main h3 {
   flex: 15%;
   background-color: #d9d9d9;
-  height: 18vw;
+  height: 20vw;
   padding: 2vw;
   color: #ca005d;
   font-weight: lighter;
@@ -397,14 +397,14 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
 .footer_empty {
   background-color: #d9d9d9;
   flex: 50%;
-  height: 18vw;
-  padding: 2vw;
+  height: 20vw;
+  padding: 0vw;
 }
 
 .footer_subtitle {
   font-size: 1.5vw;
   font-weight:300;
-  line-height: 0.2vw;
+  /* line-height: 0.2vw; */
 }
 
 .footer_subtitle a{
@@ -416,7 +416,7 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
 
 .footer_socials {
     font-size: 3.9vw;
-    margin-left: 3vw;
+    /* margin-left: 3vw; */
     vertical-align:bottom;
     display: flex;
     flex-direction: column-reverse;
@@ -427,7 +427,7 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
 
   .social_icons{
     display:flex;
-    justify-content:flex-end;
+    justify-content: flex-end;
     align-items: flex-end;
   }
   
@@ -435,7 +435,8 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
     display: inline-block;
     width: 4vw;
     height: 4vw;
-    margin: 0 01.2vw;
+    margin: 0 1.2vw;
+    margin-left: 0vw;
     align-self: flex-end;
   }
   
