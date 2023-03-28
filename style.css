@@ -32,7 +32,6 @@ body {
   height: 125vh;
   margin: 0px;
   font-family: 'Barlow Condensed', sans-serif;
-  /* padding: 30px; */
   background-size: cover;
 }
 
@@ -154,17 +153,21 @@ body {
 
 /*css for header*/
 .header {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  /* flex: 100%; */
   background-color: #ca005d;
-  height: 525px;
+  height: 35vw;
 }
 
 /*header title*/
 .header h2 {
   color: #ffffff;
   font-family: 'movavi_grotesqueblack_italic', sans-serif;
-  font-size: 96px;
-  padding-left: 58px;
-  padding-top: 273px;
+  font-size: 8vw;
+  padding-left: 3vw;
+  padding-top: 16vw;
   margin-bottom: 0px;
 }
 
@@ -172,9 +175,9 @@ body {
 .header h3 {
   color: #ffffff;
   font-family: 'Barlow', sans-serif;
-  font-size: 48px;
+  font-size: 3.2vw;
   margin-top: 0px;
-  padding-left: 58px;
+  padding-left: 3vw;
 }
 
 
@@ -195,31 +198,43 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
 
 .side {
   flex: 45%;
-  height: 45vw;
+  height: 37vw;
   background-color: white;
-  padding: 20px;
+  padding: 1vw;
   color: #ca005d;
   font-family:'movavi_grotesqueblack_italic', sans-serif;
   font-size: 4vw;
 }
 
+.side h4 {
+  margin: 0;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.side h3 {
+  padding-left: 2vw;
+}
+
 .main {
   flex: 55%;
-  height: 55vw;
+  height: 37vw;
   background-color: white;
-  padding: 20px;
+  padding: 1vw;
   font-family:'movavi_grotesqueblack_italic', sans-serif;
   text-align: center;
   font-size: 3.8vw;
-  padding-top: 12vw;
-  padding-right: 4vw;
+  display: flex;
+  align-items: center;
 }
 
 .side-alt {
   flex: 45%;
-  height: 45vw;
+  height: 40vw;
   background-color: #d9d9d9;
-  padding: 20px;
+  padding: 1vw;
   font-weight:lighter;
   font-size: 2.5vw;
   padding-left: 2vw;
@@ -227,14 +242,19 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
   font: 200;
   font-weight: extra light;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .main-alt {
   flex: 55%;
-  height: 45vw;
+  height: 40vw;
   background-color: #d9d9d9;
-  padding: 20px;
-  padding-top: 7vw;
+  padding: 1vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .main-alt img {
