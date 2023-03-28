@@ -293,11 +293,6 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
   width: 25vw;
 }
 
-.bottom_left img {
-  height: 13vw;
-  width: 27vw;
-}
-
 .bottom_side {
   flex: 35%;
   height: 35vw;
@@ -448,45 +443,60 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
 
 
 
-.rectangle1 {
-  width: 33.4vw;
+.rectangle {
+  flex: 29%;
   height: 57vw;
   position: relative;
-  left: 11vw;
-  float: left;
   background-color: lightgray;
   border-radius: 2.8vw;
+  display:flex;
 }
 
-.rectangle2 {
-  width: 33.4vw;
-  height: 57vw;
-  position: relative;
-  left: 21.7vw;
-  float: left;
-  background-color: lightgray;
-  border-radius: 2.8vw;
+.middle_panels {
+  flex: 33%;
+  height: 70vw;
+  background-color: white;
+  padding: 2vw;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
-.rectangle3 {
-  width: 33.4vw;
-  height: 57vw;
-  position: relative;
-  left: 32.6vw;
-  float: left;
-  background-color: lightgray;
-  border-radius: 2.8vw;
+.side_panels {
+  flex: 33%;
+  height: 70vw;
+  background-color: white;
+  padding: 2vw;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .inner {
-  width: 28.6vw;
+  width: 25vw;
   height: 52.4vw;
   position: relative;
   left: 2.4vw;
   top: 2.4vw;
   background-color: white;
   border-radius: 2.8vw;
+  display: block;
+  text-align: center; 
 }
+
+.bottom_ex{
+  flex: 100%;
+  height: 37vw;
+  background-color: lightgrey;
+  padding: 1vw;
+  font-family:'movavi_grotesqueblack_italic', sans-serif;
+  font-size: 3.8vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  line-height: 4.5vw;
+}
+
 
 /* body title */
 h4 {
@@ -501,6 +511,22 @@ h5 {
   color: #000000;
   font-family:'movavi_grotesqueblack_italic', sans-serif;
   font-size: 1.7vw;
+}
+
+h18 {
+  color:#000000;
+  font-family: 'Barlow Condesed', sans-serif;
+  font-size: 1.5vw;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 3vw;
+}
+
+h19{
+  color:#000000;
+  font-family: 'Barlow Condesed', sans-serif;
+  font-size: 3vw;
+  font-weight: 200;
 }
 
 .container {
