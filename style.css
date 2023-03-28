@@ -555,26 +555,9 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
   
 }
 
-.greybox3 {
+.greybox3A {
+  flex:50%;
   background-color: whitesmoke;
-  height: 35vw;
-  padding: 2.8vw;
-  width: auto;
-  font-family:'Barlow Condensed';
-  font-size: 2.5vw;
-  font: 28vw;
-  text-align: left;
-}
-
-.greybox3 p {
-  padding: 1.4vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.greybox4 {
-  background-color: #d9d9d9;
   height: 40vw;
   padding: 2.8vw;
   width: auto;
@@ -584,22 +567,43 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
   text-align: left;
 }
 
-.greybox4 p {
+.greybox3A p {
+  padding: 1.4vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.greybox3B {
+  flex:50%;
+  background-color: whitesmoke;
+  height: 40vw;
+  padding: 2.8vw;
+  width: auto;
+  font-family:'Barlow Condensed';
+  font-size: 2.5vw;
+  font: 28vw;
+  text-align: left;
+}
+
+.greybox3B p {
   padding: 1.4vw;
   display: flex;
   align-items: center;
 }
 
-.button{
+.button {
   background-color: #ca005d;
   border: none;
   width: 20vw;
   height: 5vw;
+  margin-left: 1.4vw;
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  font-family: 'Barlow Condensed', sans-serif;
   font-size: 2vw;
-  font-family: 'Barlow Condesed';
+  color: #ffffff;
   border-radius: 0.7vw;
 }
 
