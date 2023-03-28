@@ -266,7 +266,7 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
   flex: 100%;
   height: 10vw;
   background-color: white;
-  padding: 20px;
+  padding: 1.9vw;
   color: #ca005d;
   font-family:'movavi_grotesqueblack_italic', sans-serif;
   font-size: 4vw;
@@ -282,7 +282,7 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
   flex: 30%;
   height: 35vw;
   background-color: white;
-  padding: 20px;
+  padding: 2vw;
   align-items: center;
   display: flex;
   justify-content: center;
@@ -302,7 +302,7 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
   flex: 35%;
   height: 35vw;
   background-color: white;
-  padding: 20px;
+  padding: 2vw;
   align-items: center;
   display: flex;
   justify-content: center;
@@ -320,7 +320,7 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
     right: 0;
     left: 0;
     text-align: center;
-    padding: 16px 0;
+    padding: 1.5vw;
   }
 
   .menu li:hover {
@@ -448,58 +448,58 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
 
 
 .rectangle1 {
-  width: 350px;
-  height: 600px;
+  width: 33.4vw;
+  height: 57vw;
   position: relative;
-  left: 114px;
+  left: 11vw;
   float: left;
   background-color: lightgray;
-  border-radius: 30px;
+  border-radius: 2.8vw;
 }
 
 .rectangle2 {
-  width: 350px;
-  height: 600px;
+  width: 33.4vw;
+  height: 57vw;
   position: relative;
-  left: 228px;
+  left: 21.7vw;
   float: left;
   background-color: lightgray;
-  border-radius: 30px;
+  border-radius: 2.8vw;
 }
 
 .rectangle3 {
-  width: 350px;
-  height: 600px;
+  width: 33.4vw;
+  height: 57vw;
   position: relative;
-  left: 342px;
+  left: 32.6vw;
   float: left;
   background-color: lightgray;
-  border-radius: 30px;
+  border-radius: 2.8vw;
 }
 
 .inner {
-  width: 300px;
-  height: 550px;
+  width: 28.6vw;
+  height: 52.4vw;
   position: relative;
-  left: 25px;
-  top: 25px;
+  left: 2.4vw;
+  top: 2.4vw;
   background-color: white;
-  border-radius: 30px;
+  border-radius: 2.8vw;
 }
 
 /* body title */
 h4 {
   color: #ca005d;
   font-family:'movavi_grotesqueblack_italic', sans-serif;
-  font-size: 48px;
-  margin-top: 15px;
-  padding-left: 58px;
+  font-size: 4.6vw;
+  margin-top: 1.43vw;
+  padding-left: 5.5vw;
 }
 
 h5 {
   color: #000000;
   font-family:'movavi_grotesqueblack_italic', sans-serif;
-  font-size: 18px;
+  font-size: 1.7vw;
 }
 
 .container {
@@ -511,12 +511,12 @@ h5 {
 .imgcontact {
   width: 40%;
   height:40%;
-  padding-left: 58px;
+  padding-left: 5.5vw;
 }
 
 .text {
-  font-size: 20px;
-  padding-left: 20px;
+  font-size: 2vw;
+  padding-left: 2vw;
 }
 
 /*css style for diana's aboutopenkat page*/
@@ -524,59 +524,76 @@ h5 {
   flex: 50%;
   background-color: whitesmoke;
   height: 45vw;
-  padding: 20px;
+  padding: 2vw;
   text-align: left;
   font-family:'Barlow Condensed';
   font-size: 2.5vw;
-  font: 300;
+  font: 28vw;
 }
 .greybox1B {
   flex: 50%;
   background-color: whitesmoke;
   height: 45vw;
-  padding: 30px;
+  padding: 2.8vw;
   font-family:'Barlow Condensed';
   font-size: 2.5vw;
-  font: 300;
+  font: 28vw;
   text-align: left;
 }
 .greybox2A {
   flex: 50%;
   background-color: #d9d9d9;
   height: 45vw;
-  padding: 30px;
+  padding: 2.8vw;
   font-family:'Barlow Condensed';
   text-align: left;
   font-size: 2.5vw;
-  font: 300;
+  font: 28vw;
 }
 .greybox2B {
   flex: 50%;
   background-color: #d9d9d9;
   height: 45vw;
-  padding: 25px;
+  padding: 2.4vw;
   font-family:'Barlow Condensed';
   font-size: 2.5vw;
-  font: 300;
+  font: 28vw;
   text-align: left;
 }
 .greybox3 {
   background-color: whitesmoke;
   height: 35vw;
-  padding: 30px;
+  padding: 2.8vw;
   width: auto;
   font-family:'Barlow Condensed';
   font-size: 2.5vw;
-  font: 300;
+  font: 28vw;
   text-align: left;
 }
 .greybox4 {
   background-color: #d9d9d9;
   height: 35vw;
-  padding: 30px;
+  padding: 2.8vw;
   width: auto;
   font-family:'Barlow Condensed';
   font-size: 2.5vw;
-  font: 300;
+  font: 28vw;
   text-align: left;
+}
+
+.button{
+  background-color: #ca005d;
+  border: none;
+  width: 20vw;
+  height: 5vw;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2vw;
+  font-family: 'Barlow Condesed';
+  border-radius: 0.7vw;
+}
+
+.button:hover {
+  background-color: palevioletred;
 }
