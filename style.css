@@ -253,11 +253,9 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
   text-align: center;
 }
 
-.left_side_bottom {
-  flex: 35%;
-  height: 35vw;
-  background-color: white;
-  padding: 20px;
+.bottom_side img {
+  height: 12vw;
+  width: 25vw;
 }
 
 .middle_bottom {
@@ -265,13 +263,29 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
   height: 35vw;
   background-color: white;
   padding: 20px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
-.right_side_bottom {
+.middle_bottom img {
+  height: 5vw;
+  width: 25vw;
+}
+
+.bottom_left img {
+  height: 13vw;
+  width: 27vw;
+}
+
+.bottom_side {
   flex: 35%;
   height: 35vw;
   background-color: white;
   padding: 20px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 
@@ -342,6 +356,7 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
 
 .footer li {
   margin: 20px;
+  list-style: none;
 }
 
 .footer a:hover {
@@ -367,7 +382,6 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
 
 .footer_subtitle {
   font-size: 1.5vw;
-  list-style: none;
   font-weight:300;
   line-height: 2px;
 }
