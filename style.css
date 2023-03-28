@@ -205,7 +205,7 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
 
 .main {
   flex: 55%;
-  height: 45vw;
+  height: 55vw;
   background-color: white;
   padding: 20px;
   font-family:'movavi_grotesqueblack_italic', sans-serif;
@@ -356,7 +356,7 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
 
 .footer li {
   margin: 20px;
-  list-style: none;
+  margin-left: 0px;
 }
 
 .footer a:hover {
@@ -471,6 +471,12 @@ h4 {
   padding-left: 58px;
 }
 
+h5 {
+  color: #000000;
+  font-family:'movavi_grotesqueblack_italic', sans-serif;
+  font-size: 18px;
+}
+
 .container {
   display: flex;
   align-items: center;
@@ -486,4 +492,66 @@ h4 {
 .text {
   font-size: 20px;
   padding-left: 20px;
+}
+
+/*css style for diana's aboutopenkat page*/
+.greybox1A {
+  flex: 50%;
+  background-color: whitesmoke;
+  height: 45vw;
+  padding: 20px;
+  text-align: left;
+  font-family:'Barlow Condensed';
+  font-size: 2.5vw;
+  font: 300;
+}
+.greybox1B {
+  flex: 50%;
+  background-color: whitesmoke;
+  height: 45vw;
+  padding: 30px;
+  font-family:'Barlow Condensed';
+  font-size: 2.5vw;
+  font: 300;
+  text-align: left;
+}
+.greybox2A {
+  flex: 50%;
+  background-color: #d9d9d9;
+  height: 45vw;
+  padding: 30px;
+  font-family:'Barlow Condensed';
+  text-align: left;
+  font-size: 2.5vw;
+  font: 300;
+}
+.greybox2B {
+  flex: 50%;
+  background-color: #d9d9d9;
+  height: 45vw;
+  padding: 25px;
+  font-family:'Barlow Condensed';
+  font-size: 2.5vw;
+  font: 300;
+  text-align: left;
+}
+.greybox3 {
+  background-color: whitesmoke;
+  height: 35vw;
+  padding: 30px;
+  width: auto;
+  font-family:'Barlow Condensed';
+  font-size: 2.5vw;
+  font: 300;
+  text-align: left;
+}
+.greybox4 {
+  background-color: #d9d9d9;
+  height: 35vw;
+  padding: 30px;
+  width: auto;
+  font-family:'Barlow Condensed';
+  font-size: 2.5vw;
+  font: 300;
+  text-align: left;
 }
