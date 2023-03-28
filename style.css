@@ -548,15 +548,20 @@ h19{
 
 /*css style for diana's aboutopenkat page*/
 .greybox1A {
-  flex: 50%;
-  background-color: whitesmoke;
+  /* flex: 50%; */
   height: 45vw;
-  padding: 2vw;
-  text-align: left;
-  font-family:'Barlow Condensed';
+  background-color: whitesmoke;
+  padding: 1vw;
   font-size: 2.5vw;
-  font: 28vw;
+  padding: 2vw;
+  font-family:'Barlow Condensed', sans-serif;
+  font: 200;
 }
+
+.greybox1A img {
+  width: 45vw;
+}
+
 .greybox1B {
   flex: 50%;
   background-color: whitesmoke;
@@ -566,17 +571,29 @@ h19{
   font-size: 2.5vw;
   font: 28vw;
   text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 .greybox2A {
   flex: 50%;
   background-color: #d9d9d9;
   height: 45vw;
   padding: 2.8vw;
   font-family:'Barlow Condensed';
-  text-align: left;
   font-size: 2.5vw;
   font: 28vw;
+  text-align: left;
 }
+
+.greybox2A p {
+  padding: 1.4vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .greybox2B {
   flex: 50%;
   background-color: #d9d9d9;
@@ -586,20 +603,20 @@ h19{
   font-size: 2.5vw;
   font: 28vw;
   text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.greybox3 {
+
+.greybox2B img {
+  width: 44vw;
+  
+}
+
+.greybox3A {
+  flex:50%;
   background-color: whitesmoke;
-  height: 35vw;
-  padding: 2.8vw;
-  width: auto;
-  font-family:'Barlow Condensed';
-  font-size: 2.5vw;
-  font: 28vw;
-  text-align: left;
-}
-.greybox4 {
-  background-color: #d9d9d9;
-  height: 35vw;
+  height: 40vw;
   padding: 2.8vw;
   width: auto;
   font-family:'Barlow Condensed';
@@ -608,19 +625,103 @@ h19{
   text-align: left;
 }
 
-.button{
+.greybox3A p {
+  padding: 1.4vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.greybox3B {
+  flex:50%;
+  background-color: whitesmoke;
+  height: 40vw;
+  padding: 2.8vw;
+  width: auto;
+  font-family:'Barlow Condensed';
+  font-size: 2.5vw;
+  font: 28vw;
+  text-align: left;
+}
+
+.greybox3B p {
+  padding: 1.4vw;
+  display: flex;
+  align-items: center;
+}
+
+.button {
   background-color: #ca005d;
   border: none;
   width: 20vw;
   height: 5vw;
+  margin-left: 1.4vw;
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  font-family: 'Barlow Condensed', sans-serif;
   font-size: 2vw;
-  font-family: 'Barlow Condesed';
+  color: #ffffff;
   border-radius: 0.7vw;
 }
 
 .button:hover {
   background-color: palevioletred;
+}
+
+/* body title */
+h4 {
+  color: #ca005d;
+  font-family:'movavi_grotesqueblack_italic', sans-serif;
+  font-size: 3.265vw;
+  margin-top: 1.020vw;
+  margin-bottom: 2.041vw;
+  padding-left: 3.946vw;
+}
+
+/* contact person title */
+h5 {
+  color: #ca005d;
+  font-family:'movavi_grotesqueblack', sans-serif;
+  font-size: 2.721vw;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+/* contact container */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.imgcontact img {
+  width: 30.612vw;
+  height: auto;
+  padding-left: 3.946vw;
+}
+
+.text {
+  font-family: 'Barlow', sans-serif;
+  font-size: 2.721vw;
+  padding-left: 2.041vw;
+  padding-right: 3.401vw;
+  margin-top: 0vw;
+}
+
+.side-alt2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20vw;
+
+  background: rgba(48, 48, 48, 0.12);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
