@@ -382,24 +382,25 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
 .footer_main h3 {
   flex: 15%;
   background-color: #d9d9d9;
-  height: 20vw;
+  height: 15vw;
   padding: 2vw;
   color: #ca005d;
-  font-weight: lighter;
+  font-weight: 500;
   text-align: left;
+  font-size: 2vw;
 }
 
 .footer_empty {
   background-color: #d9d9d9;
   flex: 50%;
-  height: 20vw;
+  height: 15vw;
   padding: 0vw;
 }
 
 .footer_subtitle {
   font-size: 1.5vw;
   font-weight:300;
-  /* line-height: 0.2vw; */
+  line-height: 2.5vw;
 }
 
 .footer_subtitle a{
@@ -440,6 +441,7 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
     padding: 5vw;
     display: inline-block;
   }
+
 
 
 
