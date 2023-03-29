@@ -442,7 +442,6 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
 .rectangle {
   flex: 29%;
   height: 57vw;
-  position: relative;
   background-color:  #d9d9d9;
   border-radius: 2.8vw;
   display: flex;
@@ -477,7 +476,6 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
 .inner {
   height: 52.4vw;
   width: fit-content;
-  position: relative;
   background-color: whitesmoke;
   border-radius: 2.8vw;
   display: block;
