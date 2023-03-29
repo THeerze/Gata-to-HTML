@@ -240,23 +240,12 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
   padding-left: 2vw;
   font-family:'Barlow Condensed';
   font: 200;
+  font-weight: extra light;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  line-height: 4vw;
 }
-
-.side-alt p {
-  font-family: 'Barlow';
-  font-size: 2.721vw;
-  padding-left: 2.041vw;
-  padding-right: 3.401vw;
-  margin-top: 0vw;
-  color: #000000;
-  font-weight: normal;
-}
-
 
 .main-alt {
   flex: 55%;
@@ -285,7 +274,7 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
 }
 
 .bottom_side img {
-  height: 12vw;
+  height: auto;
   width: 25vw;
 }
 
@@ -412,13 +401,9 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
   font-size: 1.5vw;
   font-weight:300;
   line-height: 2.5vw;
-  color: #606060;
-  text-decoration: none;
-  font-style: italic;
-  text-align: left;
 }
 
-.footer_subtitle a {
+.footer_subtitle a, p{
   color: #606060;
   text-decoration: none;
   font-style: italic;
