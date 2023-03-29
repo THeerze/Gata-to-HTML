@@ -351,7 +351,10 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
     background-color: #ca005d;
   }
 
-
+  .experiences {
+    background-color: whitesmoke;
+  }
+  
 
   /* For the website body */
   .row,
@@ -435,8 +438,6 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
     margin-left: 0vw;
     align-self: flex-end;
   }
-  
-
 
 .rectangle {
   flex: 29%;
@@ -444,39 +445,54 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
   position: relative;
   background-color:  #d9d9d9;
   border-radius: 2.8vw;
-  display:flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .middle_panels {
   flex: 33%;
   height: 70vw;
+  width: 33%;
   background-color: whitesmoke;
   padding: 2vw;
   align-items: center;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .side_panels {
   flex: 33%;
   height: 70vw;
+  width: 33%;
   background-color: whitesmoke;
   padding: 2vw;
   align-items: center;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .inner {
-  width: 25vw;
   height: 52.4vw;
+  width: fit-content;
   position: relative;
-  left: 2.4vw;
-  top: 2.4vw;
   background-color: whitesmoke;
   border-radius: 2.8vw;
   display: block;
   text-align: center; 
+  margin: 2vw;
+}
+
+.inner p {
+  color:#000000;
+  font-family: 'Barlow Condesed', sans-serif;
+  font-size: 1.5vw;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 2.7vw;
+  text-align: center;
 }
 
 .bottom_ex{
@@ -516,15 +532,6 @@ h5 {
   color: #000000;
   font-family:'movavi_grotesqueblack_italic', sans-serif;
   font-size: 1.7vw;
-}
-
-h18 {
-  color:#000000;
-  font-family: 'Barlow Condesed', sans-serif;
-  font-size: 1.5vw;
-  font-weight: 300;
-  font-style: italic;
-  line-height: 3vw;
 }
 
 .container {
