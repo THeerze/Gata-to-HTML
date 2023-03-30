@@ -1008,6 +1008,7 @@ h5 {
 
 .button:hover {
   background-color: palevioletred;
+  transition: 0.3s ease;
 }
 
 /* body title */
