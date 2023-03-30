@@ -55,6 +55,8 @@ body {
     background-color: #d9d9d9;
     color: #000000;
     box-shadow: 0 0 5px 0 black;
+    position: sticky;
+    top: 0vw;
   }
   
   .nav-links a {
@@ -73,11 +75,27 @@ body {
     width: 40px;
     height: 40px;
   }
+
+  .logo img.hover {
+    display: none;
+  }
+
+  .logo:hover img {
+    display: none;
+  }
+
+  .logo:hover img.hover {
+    display: inline-block;
+  }
   
   .logo a i {
     color: #000000;
     padding: 5px;
     display: inline-block;
+  }
+
+  .logo:hover a i {
+    color: #ca005d;
   }
   
   /* NAVBAR MENU */
@@ -509,7 +527,6 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
 .bottom_ex p {
   font-family: 'Barlow', sans-serif;
   font-size: 2.721vw;
-  padding-left: 2.041vw;
   padding-right: 3.401vw;
   margin-top: 0vw;
   color: #000000;
