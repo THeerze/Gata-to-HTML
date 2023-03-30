@@ -35,6 +35,12 @@ body {
   background-size: cover;
 }
 
+p {
+  color: #606060;
+  text-decoration: none;
+  font-style: italic;
+}
+
 /* following code for responsive navbar adapted from
   https://www.makeuseof.com/responsive-navigation-bar-using-html-and-css/ */
 
@@ -425,7 +431,14 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
   line-height: 2.5vw;
 }
 
-.footer_subtitle a, p{
+.footer_subtitle a, .footer_subtitle p {
+  color: #606060;
+  text-decoration: none;
+  font-style: italic;
+  text-align: left;
+}
+
+p.footer_subtitle {
   color: #606060;
   text-decoration: none;
   font-style: italic;
@@ -814,10 +827,20 @@ h5 {
   font-family:'Barlow Condensed';
   font-size: 2.5vw;
   font: 28vw;
-  text-align: left;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+}
+
+.greybox1B p {
+  padding: 1.4vw;
+  text-align: left;
+
+}
+
+.greybox1B ul li {
+ margin-left: 5vw;
 }
 
 .greybox2A {
