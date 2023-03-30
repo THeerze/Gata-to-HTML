@@ -691,24 +691,6 @@ https://codepen.io/jh3y/pen/WwVKLN */
 .carousel__indicator {
   background-color: #000000;
 }
-/* .carousel__slide:nth-of-type(1),
-.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(1) {
-  background-image: url("https://unsplash.it/300?random");
-  background-size: cover;
-  background-position: center;
-}
-.carousel__slide:nth-of-type(2),
-.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(2) {
-  background-image: url("https://unsplash.it/600?random");
-  background-size: cover;
-  background-position: center;
-}
-.carousel__slide:nth-of-type(3),
-.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(3) {
-  background-image: url("https://unsplash.it/900?random");
-  background-size: cover;
-  background-position: center;
-} */
 
 /* Experiences carousel content boxes */
 .rectangle {
@@ -850,10 +832,16 @@ h5 {
 }
 
 .greybox2A p {
+  color: #606060;
   padding: 1.4vw;
   display: flex;
   align-items: center;
-  justify-content: center;
+}
+
+.greybox2A ul li {
+  font-family:'Barlow Condensed';
+  margin-left: 5vw;
+  color: #000000;
 }
 
 .greybox2B {
@@ -872,7 +860,6 @@ h5 {
 
 .greybox2B img {
   width: 44vw;
-  
 }
 
 .greybox3A {
@@ -891,16 +878,14 @@ h5 {
   padding: 1.4vw;
   display: flex;
   align-items: center;
-}
-
-.greybox3A ul {
+  color: #606060;
 }
 
 .greybox3A ul li {
   font-family:'Barlow Condensed';
   margin-left: 5vw;
   font-size: 1.7vw; 
-  color: #606060;
+  color: #000;
 }
 
 .greybox3B {
@@ -949,6 +934,18 @@ h5 {
   justify-content: center;
 }
 
+.greybox4B li {
+  list-style: none;
+}
+
+.greybox4B li h7 {
+  color:#ca005d; 
+  padding: 1vw; 
+  padding-left: 0vw; 
+  padding-right: 0vw; 
+  font-weight: bold;
+}
+
 .greybox5 {
   flex: 100%;
   height: 35vw;
@@ -961,7 +958,7 @@ h5 {
   flex-direction: column;
   line-height: 4.5vw;
   vertical-align: middle;
-
+  justify-content: center;
 }
 
 .greybox5 p {
