@@ -511,18 +511,7 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
   text-align: center;
 }
 
-.bottom_ex{
-  flex: 100%;
-  height: 37vw;
-  background-color: whitesmoke;
-  padding: 1vw;
-  font-family:'movavi_grotesqueblack_italic', sans-serif;
-  font-size: 3.8vw;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  line-height: 4.5vw;
-}
+
 
 .bottom_ex p {
   font-family: 'Barlow', sans-serif;
@@ -569,7 +558,7 @@ h5 {
 .greybox1A {
   /* flex: 50%; */
   height: 45vw;
-  background-color: whitesmoke;
+  background-color: #e6e6e6;
   padding: 1vw;
   font-size: 2.5vw;
   padding: 2vw;
@@ -583,7 +572,7 @@ h5 {
 
 .greybox1B {
   flex: 50%;
-  background-color: whitesmoke;
+  background-color: #e6e6e6;
   height: 45vw;
   padding: 2.8vw;
   font-family:'Barlow Condensed';
@@ -597,7 +586,7 @@ h5 {
 
 .greybox2A {
   flex: 50%;
-  background-color: #e6e6e6;
+  background-color: whitesmoke;
   height: 45vw;
   padding: 2.8vw;
   font-family:'Barlow Condensed';
@@ -615,7 +604,7 @@ h5 {
 
 .greybox2B {
   flex: 50%;
-  background-color: #e6e6e6;
+  background-color: whitesmoke;
   height: 45vw;
   padding: 2.4vw;
   font-family:'Barlow Condensed';
@@ -696,6 +685,27 @@ h5 {
   align-items: center;
   justify-content: center;
 }
+
+.greybox5 {
+  flex: 100%;
+  height: 37vw;
+  background-color: whitesmoke;
+  padding: 1vw;
+  font-family:'Barlow Condensed';
+  font-size: 2.5vw;
+  font:28vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  line-height: 4.5vw;
+}
+
+.greybox5 p {
+  padding: 1.4vw;
+  display: flex;
+  align-items: center;
+}
+
 
 .button {
   background-color: #ca005d;
