@@ -55,82 +55,134 @@
         <h2>Experiences</h2>
         <h3>Partner Statements</h3>
     </div>
-          
-          
+
+    <!-- html for responsive carousel adapted from
+    https://codepen.io/jh3y/pen/WwVKLN -->
+    <div class="carousel-row">
+        <div class="carousel-container">
+            <div class="carousel my-carousel carousel--translate">
+                <input class="carousel__activator" type="radio" name="carousel" id="F" checked="checked" />
+                <input class="carousel__activator" type="radio" name="carousel" id="G" />
+                <input class="carousel__activator" type="radio" name="carousel" id="H" />
+                <div class="carousel__controls">
+                    <label class="carousel__control carousel__control--backward" for="H"></label>
+                    <label class="carousel__control carousel__control--forward" for="G"></label>
+                </div>
+                <div class="carousel__controls">
+                    <label class="carousel__control carousel__control--backward" for="F"></label>
+                    <label class="carousel__control carousel__control--forward" for="H"></label>
+                </div>
+                <div class="carousel__controls">
+                    <label class="carousel__control carousel__control--backward" for="G"></label>
+                    <label class="carousel__control carousel__control--forward" for="F"></label>
+                </div>
+                <div class="carousel__track">
+                    <li class="carousel__slide">
+                        <!-- <h1>F</h1> -->
+                        <div class="side_panels">
+                            <h3 class="rectangle">
+                                <div class="inner" style="padding: 1.5vw;">
+                                    <img src="content/zcert.logo.png" alt="Z-Cert"
+                                        style="width: 21vw; height: 7vw; margin-top: 1vw;">
+                                    <br>
+                                    <p style="margin-top: 3.15vw;">“The great thing about KAT is that we can closely
+                                        follow the development of security and vulnerabilities that are often missed. We
+                                        see in practice how systems improve quickly through continuous monitoring. All
+                                        this without a negative privacy aftertaste.”</p>
+                            </h3>
+                        </div>
+                    </li>
+                    <li class="carousel__slide">
+                        <!-- <h1>G</h1> -->
+                        <div class="middle_panels">
+                            <h3 class="rectangle">
+                                <div class="inner" style="padding: 1.5vw;">
+                                    <img src="content/logo-cert.png" alt="Cert"
+                                        style="width: 19.5vw; height: 9.2vw; margin-top: 1vw;">
+                                    <br>
+                                    <p style="margin: 1vw;">“There are a lot of powerful open-source tools on the market
+                                        that are very strong in themselves at performing a specific action. But what if
+                                        all these tools could be properly integrated with each other? What if these
+                                        tools together form a powerful scanner to detect all kinds of vulnerabilities?
+                                        That is what the developers of OpenKAT had in mind when developing this tool”
+                                    <p>
+                            </h3>
+                        </div>
+                    </li>
+                    <li class="carousel__slide">
+                        <!-- <h1>H</h1> -->
+                        <div class="side_panels">
+                            <h3 class="rectangle">
+                                <div class="inner" style="padding: 1.5vw;">
+                                    <img src="content/logo-sidn.svg" alt="SIDN" style="width: 9.5vw; height: 9.5vw;">
+                                    <br>
+                                    <p style="margin-top: 1.6vw;">“I see the software as suitable for compliance testing
+                                        in all sorts of settings. The crucial thing is to keep the existing partnerships
+                                        going”</p>
+                            </h3>
+                        </div>
+                    </li>
+                    <li class="carousel__slide">
+                        <h1>I</h1>
+                    </li>
+                    <li class="carousel__slide">
+                        <h1>J</h1>
+                    </li>
+                </div>
+                <div class="carousel__indicators">
+                    <label class="carousel__indicator" for="F"></label>
+                    <label class="carousel__indicator" for="G"></label>
+                    <label class="carousel__indicator" for="H"></label>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="row experiences">
-
-        <div class="side_panels">
-            <h3 class="rectangle">
-                <div class="inner" style="padding: 1.5vw;">
-                    <img src="content/zcert.logo.png" alt="Z-Cert" style="width: 21vw; height: 7vw; margin-top: 1vw;">
-                    <br>
-                    <p style="margin-top: 3.15vw;">“The great thing about KAT is that we can closely follow the development of security and vulnerabilities that are often missed. We see in practice how systems improve quickly through continuous monitoring. All this without a negative privacy aftertaste.”</p>
-            </h3>
-        </div>
-    
-        <div class="middle_panels">
-            <h3 class="rectangle">
-                <div class="inner" style="padding: 1.5vw;">
-                    <img src="content/logo-cert.png" alt="Cert" style="width: 19.5vw; height: 9.2vw; margin-top: 1vw;">
-                    <br>
-                    <p style="margin: 1vw;">“There are a lot of powerful open-source tools on the market that are very strong in themselves at performing a specific action. But what if all these tools could be properly integrated with each other? What if these tools together form a powerful scanner to detect all kinds of vulnerabilities? That is what the developers of OpenKAT had in mind when developing this tool”<p>
-            </h3>
-        </div>
-    
-        <div class="side_panels">
-            <h3 class="rectangle">
-                <div class="inner" style="padding: 1.5vw;">
-                    <img src="content/logo-sidn.svg" alt="SIDN" style="width: 9.5vw; height: 9.5vw;">
-                    <br>
-                    <p style="margin-top: 1.6vw;">“I see the software as suitable for compliance testing in all sorts of settings. The crucial thing is to keep the existing partnerships going”</p>
-            </h3>
-        </div>
-    
-    </div>
-
-    <div class="top_bottom">
-        <h3>
-            OpenKAT is trusted by
-        </h3>
-    </div>
-    <div class="row">
-        <div class="bottom_side">
+        <div class="top_bottom">
             <h3>
-                <a href="https://www.government.nl/ministries/ministry-of-health-welfare-and-sport"><img src="content/government.png"></a>
+                OpenKAT is trusted by
             </h3>
         </div>
+        <div class="row">
+            <div class="bottom_side">
+                <h3>
+                    <a href="https://www.government.nl/ministries/ministry-of-health-welfare-and-sport"><img
+                            src="content/government.png"></a>
+                </h3>
+            </div>
 
-        <div class="middle_bottom">
-            <h3>
-                <a href="https://www.kennisnet.nl"><img src="content/Kennisnet.png"></a>
-            </h3>
-        </div>
+            <div class="middle_bottom">
+                <h3>
+                    <a href="https://www.kennisnet.nl"><img src="content/Kennisnet.png"></a>
+                </h3>
+            </div>
 
-        <div class="bottom_side">
-            <h3 class="bottom_left">
-                <a href="https://www.bdo.nl/en-gb/bdo-netherlands"><img src="content/BDO.webp"></a>
-            </h3>
-        </div>
+            <div class="bottom_side">
+                <h3 class="bottom_left">
+                    <a href="https://www.bdo.nl/en-gb/bdo-netherlands"><img src="content/BDO.webp"></a>
+                </h3>
+            </div>
 
-        <div class="bottom_side">
-            <h3>
-                <a href="https://www.bravisziekenhuis.nl"><img src="content/bravis.png"></a>
-            </h3>
-        </div>
+            <div class="bottom_side">
+                <h3>
+                    <a href="https://www.bravisziekenhuis.nl"><img src="content/bravis.png"></a>
+                </h3>
+            </div>
 
-        <div class="middle_bottom">
-            <h3>
-                <a href="https://www.catharinaziekenhuis.nl"><img src="content/catharina.svg"></a>
-            </h3>
-        </div>
+            <div class="middle_bottom">
+                <h3>
+                    <a href="https://www.catharinaziekenhuis.nl"><img src="content/catharina.svg"></a>
+                </h3>
+            </div>
 
-        <div class="bottom_side">
-            <h3 class="bottom_left">
-                <a href="https://www.sdbgroep.nl"><img src="content/sdb.jpg"></a>
-            </h3>
+            <div class="bottom_side">
+                <h3 class="bottom_left">
+                    <a href="https://www.sdbgroep.nl"><img src="content/sdb.jpg"></a>
+                </h3>
+            </div>
         </div>
     </div>
-
     <div class="footer">
         <div class="row">
             <div class="footer_main">
@@ -158,7 +210,7 @@
                     <h9 class="footer_subtitle" style="margin-top: 2vw;">
                     <a href="Contact.html">Contact</a>
                     <br>
-                    <a href="https://openkat.nl/#">Original Documentation</a>
+                    <a href="https://openkat.nl/#">OpenKAT</a>
                     </h9>
                 </h3>
             </div>
@@ -192,8 +244,6 @@
             </div>
         </div>
     </div>
-    
-    
 </body>
 
 </html>
