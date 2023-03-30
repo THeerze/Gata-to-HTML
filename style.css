@@ -96,7 +96,7 @@ body {
   }
 
   .logo:hover a i {
-    color: #ca005d;
+    color: #888888;
   }
   
   /* NAVBAR MENU */
@@ -113,7 +113,7 @@ body {
   }
   
   .menu li:hover a {
-    color: #ca005d;
+    color:#888888;
   }
   
   .menu li {
