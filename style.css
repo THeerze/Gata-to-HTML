@@ -514,7 +514,7 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
 .bottom_ex{
   flex: 100%;
   height: 37vw;
-  background-color: #e6e6e6;
+  background-color: whitesmoke;
   padding: 1vw;
   font-family:'movavi_grotesqueblack_italic', sans-serif;
   font-size: 3.8vw;
@@ -667,6 +667,34 @@ h5 {
   padding: 1.4vw;
   display: flex;
   align-items: center;
+}
+.greybox4A {
+  flex: 50%; 
+  height: 45vw;
+  background-color: #e6e6e6;
+  padding: 1vw;
+  font-size: 2.5vw;
+  padding: 2vw;
+  font-family:'Barlow Condensed', sans-serif;
+  font: 200;
+}
+
+.greybox4A img {
+  width: 45vw;
+}
+
+.greybox4B {
+  flex: 50%;
+  background-color: #e6e6e6;
+  height: 45vw;
+  padding: 2.8vw;
+  font-family:'Barlow Condensed';
+  font-size: 2.5vw;
+  font: 28vw;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .button {
