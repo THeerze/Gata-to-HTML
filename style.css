@@ -264,7 +264,7 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
 
 .top_bottom {
   flex: 100%;
-  height: 10vw;
+  height: 8vw;
   background-color: white;
   padding: 1.9vw;
   color: #ca005d;
@@ -274,7 +274,7 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
 }
 
 .bottom_side img {
-  height: 12vw;
+  height: 10vw;
   width: 25vw;
 }
 
