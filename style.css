@@ -646,6 +646,34 @@ h18 {
   display: flex;
   align-items: center;
 }
+.greybox4A {
+  flex: 50%; 
+  height: 45vw;
+  background-color: #e6e6e6;
+  padding: 1vw;
+  font-size: 2.5vw;
+  padding: 2vw;
+  font-family:'Barlow Condensed', sans-serif;
+  font: 200;
+}
+
+.greybox4A img {
+  width: 45vw;
+}
+
+.greybox4B {
+  flex: 50%;
+  background-color: #e6e6e6;
+  height: 45vw;
+  padding: 2.8vw;
+  font-family:'Barlow Condensed';
+  font-size: 2.5vw;
+  font: 28vw;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .button {
   background-color: #ca005d;
