@@ -55,6 +55,8 @@ body {
     background-color: #d9d9d9;
     color: #000000;
     box-shadow: 0 0 5px 0 black;
+    position: sticky;
+    top: 0vw;
   }
   
   .nav-links a {
@@ -73,11 +75,27 @@ body {
     width: 40px;
     height: 40px;
   }
+
+  .logo img.hover {
+    display: none;
+  }
+
+  .logo:hover img {
+    display: none;
+  }
+
+  .logo:hover img.hover {
+    display: inline-block;
+  }
   
   .logo a i {
     color: #000000;
     padding: 5px;
     display: inline-block;
+  }
+
+  .logo:hover a i {
+    color: #ca005d;
   }
   
   /* NAVBAR MENU */
@@ -233,7 +251,7 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
 .side-alt {
   flex: 45%;
   height: 40vw;
-  background-color: #d9d9d9;
+  background-color: #e6e6e6;
   padding: 1vw;
   font-weight:lighter;
   font-size: 2.5vw;
@@ -250,7 +268,7 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
 .main-alt {
   flex: 55%;
   height: 40vw;
-  background-color: #d9d9d9;
+  background-color: #e6e6e6;
   padding: 1vw;
   display: flex;
   align-items: center;
@@ -274,13 +292,13 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
 }
 
 .bottom_side img {
-  height: 10vw;
+  height: 12vw;
   width: 25vw;
 }
 
 .middle_bottom {
   flex: 30%;
-  height: 35vw;
+  height: 18vw;
   background-color: white;
   padding: 2vw;
   align-items: center;
@@ -295,7 +313,7 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
 
 .bottom_side {
   flex: 35%;
-  height: 35vw;
+  height: 18vw;
   background-color: white;
   padding: 2vw;
   align-items: center;
@@ -351,7 +369,10 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
     background-color: #ca005d;
   }
 
-
+  .experiences {
+    background-color: whitesmoke;
+  }
+  
 
   /* For the website body */
   .row,
@@ -381,7 +402,7 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
 
 .footer_main h3 {
   flex: 15%;
-  background-color: #d9d9d9;
+  background-color: #D9D9D9;
   height: 15vw;
   padding: 2vw;
   color: #ca005d;
@@ -403,7 +424,7 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
   line-height: 2.5vw;
 }
 
-.footer_subtitle a{
+.footer_subtitle a, p{
   color: #606060;
   text-decoration: none;
   font-style: italic;
@@ -431,65 +452,69 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
     display: inline-block;
     width: 4vw;
     height: 4vw;
-    margin: 0 1.2vw;
+    margin-right: 1.2vw;
     margin-left: 0vw;
     align-self: flex-end;
   }
-  
-  .footer_socials a i {
-    color: #000000;
-    padding: 5vw;
-    display: inline-block;
-  }
-
-
-
 
 .rectangle {
   flex: 29%;
   height: 57vw;
-  position: relative;
-  background-color: lightgray;
+  background-color:  #d9d9d9;
   border-radius: 2.8vw;
-  display:flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .middle_panels {
   flex: 33%;
   height: 70vw;
-  background-color: white;
+  width: 33%;
+  background-color: whitesmoke;
   padding: 2vw;
   align-items: center;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .side_panels {
   flex: 33%;
   height: 70vw;
-  background-color: white;
+  width: 33%;
+  background-color: whitesmoke;
   padding: 2vw;
   align-items: center;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .inner {
-  width: 25vw;
   height: 52.4vw;
-  position: relative;
-  left: 2.4vw;
-  top: 2.4vw;
-  background-color: white;
+  width: fit-content;
+  background-color: whitesmoke;
   border-radius: 2.8vw;
   display: block;
   text-align: center; 
+  margin: 2vw;
+}
+
+.inner p {
+  color:#000000;
+  font-family: 'Barlow Condesed', sans-serif;
+  font-size: 1.5vw;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 2.7vw;
+  text-align: center;
 }
 
 .bottom_ex{
   flex: 100%;
   height: 37vw;
-  background-color: lightgrey;
+  background-color: #e6e6e6;
   padding: 1vw;
   font-family:'movavi_grotesqueblack_italic', sans-serif;
   font-size: 3.8vw;
@@ -497,6 +522,15 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
   flex-direction: row;
   align-items: center;
   line-height: 4.5vw;
+}
+
+.bottom_ex p {
+  font-family: 'Barlow', sans-serif;
+  font-size: 2.721vw;
+  padding-right: 3.401vw;
+  margin-top: 0vw;
+  color: #000000;
+  font-weight: lighter;
 }
 
 
@@ -513,22 +547,6 @@ h5 {
   color: #000000;
   font-family:'movavi_grotesqueblack_italic', sans-serif;
   font-size: 1.7vw;
-}
-
-h18 {
-  color:#000000;
-  font-family: 'Barlow Condesed', sans-serif;
-  font-size: 1.5vw;
-  font-weight: 300;
-  font-style: italic;
-  line-height: 3vw;
-}
-
-h19{
-  color:#000000;
-  font-family: 'Barlow Condesed', sans-serif;
-  font-size: 3vw;
-  font-weight: 200;
 }
 
 .container {
@@ -579,7 +597,7 @@ h19{
 
 .greybox2A {
   flex: 50%;
-  background-color: #d9d9d9;
+  background-color: #e6e6e6;
   height: 45vw;
   padding: 2.8vw;
   font-family:'Barlow Condensed';
@@ -597,7 +615,7 @@ h19{
 
 .greybox2B {
   flex: 50%;
-  background-color: #d9d9d9;
+  background-color: #e6e6e6;
   height: 45vw;
   padding: 2.4vw;
   font-family:'Barlow Condensed';
@@ -703,11 +721,12 @@ h5 {
 }
 
 .text {
-  font-family: 'Barlow', sans-serif;
+  font-family: 'Barlow Condensed', sans-serif;
   font-size: 2.721vw;
   padding-left: 2.041vw;
   padding-right: 3.401vw;
   margin-top: 0vw;
+  color: #000000;
 }
 
 .side-alt2 {
@@ -726,3 +745,4 @@ h5 {
   justify-content: flex-end;
   align-items: flex-end;
 }
+
