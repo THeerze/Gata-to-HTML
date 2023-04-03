@@ -883,6 +883,7 @@ h5 {
 
 .greybox2B img {
   width: 44vw;
+  border: 0.01vw solid #000000;
 }
 
 .greybox3A {
@@ -1068,3 +1069,73 @@ h5 {
   align-items: flex-end;
 }
 
+
+.top_team{
+  flex: 100%;
+  height: 8vw;
+  background-color: whitesmoke;
+  padding: 1.9vw;
+  color: #ca005d;
+  font-family:'movavi_grotesqueblack_italic', sans-serif;
+  font-size: 4vw;
+  text-align: center;
+}
+
+.team_1 {
+  flex: 25%;
+  height: 18vw;
+  background-color: whitesmoke;
+  padding: 2vw;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.team_1 img {
+  height: 5vw;
+  width: 25vw;
+}
+
+.team_2 {
+  flex: 25%;
+  height: 18vw;
+  background-color: whitesmoke;
+  padding: 2vw;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.team_2 img {
+  height: 12vw;
+  width: 25vw;
+}
+.team_3 {
+  flex: 25%;
+  height: 18vw;
+  background-color: whitesmoke;
+  padding: 2vw;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.team_3 img {
+  height: 5vw;
+  width: 25vw;
+}
+
+.team_4 {
+  flex: 25%;
+  height: 18vw;
+  background-color: whitesmoke;
+  padding: 2vw;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.team_4 img {
+  height: 5vw;
+  width: 25vw;
+}
