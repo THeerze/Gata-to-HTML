@@ -110,6 +110,7 @@ p {
     display: flex;
     gap: 1em;
     font-size: 18px;
+    align-items: center;
   }
   
   .menu li:hover {
@@ -173,8 +174,6 @@ p {
     font-size: 24px;
     user-select: none;
   }
-
-
 
 /*css for header*/
 .header {
@@ -379,7 +378,6 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
   .experiences {
     background-color: whitesmoke;
   }
-  
 
   /* For the website body */
   .row,
