@@ -1103,7 +1103,7 @@ h5 {
   border-radius: 50%;
   width: 12vw;
   height: 12vw;
-  margin-top: 2vw;
+  margin-top: 11vw;
   max-width: 100%;
   height: auto;
   margin-bottom: 1vw;
@@ -1111,11 +1111,15 @@ h5 {
 
 .team_box p {
   text-align: center;
-  padding-bottom: 10vw;
+  padding-bottom: 13vw;
   margin-bottom: 0;
   font-size: 1.5vw;
 }
 
+.team_box a{
+  text-decoration: none;
+  color:#ca005d;
+}
 
 .team {
   display: flex;
