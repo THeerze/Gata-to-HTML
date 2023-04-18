@@ -760,8 +760,6 @@ https://codepen.io/jh3y/pen/WwVKLN */
   text-align: center;
 }
 
-
-
 .bottom_ex p {
   font-family: 'Barlow', sans-serif;
   font-size: 2.721vw;
@@ -1070,11 +1068,10 @@ h5 {
   align-items: flex-end;
 }
 
-
 .top_team{
   flex: 100%;
   height: 8vw;
-  background-color: whitesmoke;
+  background-color: white;
   padding: 1.9vw;
   color: #ca005d;
   font-family:'movavi_grotesqueblack_italic', sans-serif;
@@ -1082,61 +1079,49 @@ h5 {
   text-align: center;
 }
 
-.team_1 {
-  flex: 25%;
-  height: 18vw;
-  background-color: whitesmoke;
+.team_window {
+  height: 35vw;
+  flex: 20%;
+  background-color: white;
   padding: 2vw;
-  align-items: center;
   display: flex;
   justify-content: center;
-}
-
-.team_1 img {
-  height: 5vw;
-  width: 25vw;
-}
-
-.team_2 {
-  flex: 25%;
-  height: 18vw;
-  background-color: whitesmoke;
-  padding: 2vw;
   align-items: center;
+}
+
+.team_box {
+  flex: 15%;
+  height: 25vw;
+  background-color:#d9d9d9;
+  border-radius: 2vw;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: fit-content;
 }
 
-.team_2 img {
+.team_box img {
+  border-radius: 50%;
+  width: 12vw;
   height: 12vw;
-  width: 25vw;
+  margin-top: 2vw;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1vw;
 }
-.team_3 {
-  flex: 25%;
-  height: 18vw;
-  background-color: whitesmoke;
-  padding: 2vw;
-  align-items: center;
+
+.team_box p {
+  text-align: center;
+  padding-bottom: 10vw;
+  margin-bottom: 0;
+  font-size: 1.5vw;
+}
+
+
+.team {
   display: flex;
-  justify-content: center;
-}
-
-.team_3 img {
-  height: 5vw;
-  width: 25vw;
-}
-
-.team_4 {
-  flex: 25%;
-  height: 18vw;
-  background-color: whitesmoke;
-  padding: 2vw;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-
-.team_4 img {
-  height: 5vw;
-  width: 25vw;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex: 100%;
 }
