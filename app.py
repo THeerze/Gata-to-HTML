@@ -9,6 +9,7 @@ from flask import Flask, request, session, render_template, redirect
 from datetime import datetime
 from flask_sqlalchemy import SQLAlchemy
 from flask_session import Session
+from flask import redirect, url_for
 
 # Configure app
 app = Flask(__name__)
@@ -35,6 +36,7 @@ class Button(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     visitor_id = db.Column(db.String(10))
     button = db.Column(db.Boolean)
+    name = db.Column(db.String(50))
 
 # Create all the tables for the databases
 with app.app_context():
@@ -45,8 +47,8 @@ def log_data():
     try:
         time_spent = (datetime.now() - start_time).total_seconds()
 
-        # First 3 seconds is the threshold to save the time spent in the database. It is to eliminate recording repetitive page requests/reloads. 
-        if time_spent > 3:
+        # 0 seconds is the threshold to save the time spent in the database. It is to eliminate recording repetitive page requests/reloads. 
+        if time_spent > 0:
             page_view = PageView(
                 visitor_id=session.get('visitor_id'),
                 page=previous_path,
@@ -92,11 +94,10 @@ def track_time(response):
     # Every time the user requests  /confirmation route, time spent in the previous path is recorded in the database with log_data(). 
     if request.path == '/Contact':
         log_data()
-        try:
-            # Delete start_time and previous_path variables. Time spent on /confirmation route is not recorded. 
-            del start_time, previous_path
-        except:
-            pass
+        # Update start_time and previous_path
+        start_time = datetime.now()
+        previous_path = 'Contact'
+    
     return response
 
 ##################################################################################
@@ -117,6 +118,14 @@ def index():
 
 @app.route('/About_OpenKAT')
 def learn_more():
+    try:
+        button_click = Button(
+            visitor_id=session.get('visitor_id'),
+            button=True, name = 'Learn More')
+        db.session.add(button_click)
+        db.session.commit()
+    except:
+        pass
     return render_template('aboutopenkat.html')
 
 
@@ -125,25 +134,17 @@ def exp():
     return render_template('Experiences.html')
 
 @app.route('/Contact')
-def firmation():
-    return render_template('Contact.html')
-
-
-# /log_binary is the route that users are sent to when they click on the "Contact" button. 
-# However, it is a dummy route which does not render a new template. It redirects users to the Home Page. 
-# "Contact" button is added to provide an example structure for a button-click data collection. 
-# button_tracking() function saves the visitor_id in the database if the visitor clicked on the "Contact" button.  
-@app.route("/log_binary")
-def button_tracking():
+def get_in_touch():
     try:
         button_click = Button(
             visitor_id=session.get('visitor_id'),
-            button=True)
+            button=True, name = 'Get in touch')
         db.session.add(button_click)
         db.session.commit()
     except:
         pass
-    return redirect('/')
+    return render_template('Contact.html') 
+
 
 
 if __name__ == '__main__':
