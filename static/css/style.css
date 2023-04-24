@@ -983,8 +983,7 @@ h5 {
 
 .greybox5 p {
   padding: 1.4vw;
-  display: flex;
-  align-items: center;
+  display: block;
 }
 
 
