@@ -853,8 +853,8 @@ h5 {
 .greybox2A p {
   color: #606060;
   padding: 1.4vw;
-  display: flex;
-  align-items: center;
+  display: block;
+  margin: auto;
 }
 
 .greybox2A ul li {
