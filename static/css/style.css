@@ -126,6 +126,29 @@ p {
   .menu li {
     padding: 5px 14px;
   }
+
+  .menu li form {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+  }
+
+  .menu li form input[type="submit"] {
+    border: none;
+    background: none;
+    color: inherit;
+    cursor: pointer;
+    font: inherit;
+    padding: 0;
+    outline: none;
+  }
+
+  .menu li form input[type="submit"]:hover {
+    border-radius: 5px;
+    color: #888888;
+  }
   
   /* DROPDOWN MENU */
   .services {
@@ -441,6 +464,26 @@ p.footer_subtitle {
   text-decoration: none;
   font-style: italic;
   text-align: left;
+}
+
+.footer_main form {
+  display: inline;
+}
+
+.footer_main input[type="submit"] {
+  border: none;
+  background: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  color: #606060;
+  text-decoration: none;
+  font-style: italic;
+  text-align: left;
+}
+
+.footer_main input[type="submit"]:hover {
+  color: #888888;
 }
 
 .footer_socials {
@@ -853,8 +896,8 @@ h5 {
 .greybox2A p {
   color: #606060;
   padding: 1.4vw;
-  display: block;
-  margin: auto;
+  display: flex;
+  align-items: center;
 }
 
 .greybox2A ul li {
@@ -983,7 +1026,8 @@ h5 {
 
 .greybox5 p {
   padding: 1.4vw;
-  display: block;
+  display: flex;
+  align-items: center;
 }
 
 

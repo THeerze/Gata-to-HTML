@@ -1,56 +1,5 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <link rel="stylesheet" href="static/css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About OpenKAT</title>
-    <meta charset="UTF-8">
-</head>
-
-<body>
-    <!-- Navigation bar adapted from https://www.makeuseof.com/responsive-navigation-bar-using-html-and-css/ -->
-    <nav class="navbar">
-
-        <!-- LOGO -->
-        <div class="logo">
-            <a href="/">
-                <img src="static/img/cat.png">
-                <img class="hover" src="static/img/cat-hover.png">
-                <i>
-                    OpenGÁTA
-                </i>
-            </a>
-        </div>
-
-        <!-- NAVIGATION MENU -->
-        <ul class="nav-links">
-
-            <!-- USING CHECKBOX HACK -->
-            <input type="checkbox" id="checkbox_toggle" />
-            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-
-            <!-- NAVIGATION MENUS -->
-            <div class="menu">
-                <li><a href="/About_OpenKAT">About OpenKAT</a></li>
-                <li><a href="/Experiences">Experiences</a></li>
-                <li><a href="/Contact">Contact</a></li>
-                <li><a href="https://www.openkat.nl/" target="_blank" style="color: #ca005d; font-weight: bold;">
-                    OpenKAT Website
-                </a></li>
-
-                <!-- DROPDOWN MENU -->
-                <!--  <li class="services">
-                    <ul class="dropdown">
-                        <li><a href="/">Dropdown 1 </a></li>
-                        <li><a href="/">Dropdown 2</a></li>
-                        <li><a href="/">Dropdown 2</a></li>
-                        <li><a href="/">Dropdown 3</a></li>
-                        <li><a href="/">Dropdown 4</a></li>
-                    </ul> -->
-            </div>
-        </ul>
-    </nav>
+{% extends 'base.html' %}
+{% block body %}
 
     <div class="header">
         <h2>About OpenKAT</h2>
@@ -64,11 +13,7 @@
             </h2>
             <p>
                 OpenKAT was developed during the Covid-19 pandemic for the Ministry of Health. It was involved in
-                discovering possible data breaches in the CoronaCheck-App. OpenKAT has since been made a 
-            <b>
-                free
-            </b>
-                open-source tool, and
+                discovering possible data breaches in the CoronaCheck-App. OpenKAT has since been made a <span style="font-weight: 700;">free </span> open-source tool, and
                 is available for everyone to use and further develope.
             </p>
         </div>
@@ -185,71 +130,9 @@
             </p>
             <br>
             <a href="/Contact"><button type="button" class="button">Get in touch!</button></a>
-            <a href="https://openkat.nl"><button type="button" class="button">OpenKAT website</button></a>
+            <a href="/OpenKAT_website" target="_blank"><button type="button" class="button">OpenKAT website</button></a>
         </div>
 
     </div>
 
-    <div class="footer">
-        <div class="row">
-            <div class="footer_main">
-                <h3>
-                    <h8>
-                        Overview
-                    </h8>
-                    <br>
-                    <div class="footer_subtitle">
-                        <a href="/">Home</a>
-                        <br>
-                        <a href="/About_OpenKAT">About OpenKAT</a>
-                        <br>
-                        <a href="/Experiences">Experiences</a>
-                    </div>
-                </h3>
-            </div>
-
-            <div class="footer_main">
-                <h3>
-                    <h8>
-                        Get in touch!
-                    </h8>
-                    <br>
-                    <h9 class="footer_subtitle" style="margin-top: 2vw;">
-                        <a href="/Contact">Contact</a>
-                        <br>
-                        <a href="https://openkat.nl/#">OpenKAT Website</a>
-                    </h9>
-                </h3>
-            </div>
-
-            <div class="footer_empty">
-                <h3>
-
-                </h3>
-            </div>
-
-            <div class="footer_main">
-                <h3>
-                    <h8>
-                        Join the Community
-                    </h8>
-                    <br>
-                    <div class="footer_socials">
-                        <div class="social_icons">
-                            <a href="https://www.linkedin.com/groups/12594016/">
-                                <img src="static/img/linkedin.png">
-                            </a>
-                            <a href="https://github.com/minvws/nl-kat-coordination">
-                                <img src="static/img/github.png">
-                            </a>
-                        </div>
-                    </div>
-                </h3>
-            </div>
-        </div>
-    </div>
-
-
-</body>
-
-</html>
+    {% endblock %}
