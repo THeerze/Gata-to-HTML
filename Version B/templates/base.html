@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang = eng></html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+
+    <title>OpenGÁTA</title>
+</head>
+
+<body>
+    <!-- Navigation bar adapted from https://www.makeuseof.com/responsive-navigation-bar-using-html-and-css/ -->
+    <nav class="navbar">
+
+        <!-- LOGO -->
+        <div class="logo">
+            <a href="/">
+                <img src="static/img/shield.png">
+                <img class="hover" src="static/img/shield-hover.png">
+                <i>
+                    OpenGÁTA
+                </i>
+            </a>
+        </div>
+
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+
+            <!-- USING CHECKBOX HACK -->
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+            <!-- NAVIGATION MENUS -->
+            <div class="menu">
+                <li>
+                    <form action="/About_OpenKAT" method="get">
+                        <input type="hidden" name="but_type" value="About OpenKAT navbar">
+                        <input type="submit" value="About OpenKAT">
+                    </form>
+                    <!-- <a href="/About_OpenKAT">About OpenKAT</a> -->
+                </li>
+                <li><a href="/Experiences">Experiences</a></li>
+                <li>
+                    <form action="/Contact" method="get">
+                        <input type="hidden" name="but_type" value="Contact navbar">
+                        <input type="submit" value="Contact">
+                    </form>
+                </li>
+                <li><a href="/OpenKAT_website" target="_blank" style="color: #2f5379; font-weight: bold;">
+                    OpenKAT Website
+                </a></li>
+
+                <!-- DROPDOWN MENU -->
+                <!--  <li class="services">
+                    <ul class="dropdown">
+                        <li><a href="/">Dropdown 1 </a></li>
+                        <li><a href="/">Dropdown 2</a></li>
+                        <li><a href="/">Dropdown 2</a></li>
+                        <li><a href="/">Dropdown 3</a></li>
+                        <li><a href="/">Dropdown 4</a></li>
+                    </ul> -->
+            </div>
+        </ul>
+    </nav>
+
+    {% block body %} {% endblock %}
+
+     
+    <div class="footer">
+        <div class="row">
+            <div class="footer_main">
+                <h3>
+                    <h8>
+                    Overview
+                    </h8>
+                    <br>
+                    <div class="footer_subtitle">
+                        <a href="/">Home</a>
+                        <br>
+                        <form action="/About_OpenKAT" method="get">
+                            <input type="hidden" name="but_type" value="About OpenKAT navbar">
+                            <input type="submit" value="About OpenKAT">
+                        </form>
+                        <br>
+                        <a href="/Experiences">Experiences</a>
+                    </div>
+                </h3>  
+            </div>
+        
+            <div class="footer_main">
+                <h3>
+                    <h8>
+                    Get in touch!
+                    </h8>
+                    <br>
+                    <h9 class="footer_subtitle" style="margin-top: 2vw;">
+                    <form action="/Contact" method="get">
+                        <input type="hidden" name="but_type" value="Contact navbar">
+                        <input type="submit" value="Contact">
+                    </form>
+                    <br>
+                    <a href="/OpenKAT_website" target="_blank">OpenKAT Website</a>
+                    </h9>
+                </h3>
+            </div>
+
+            <div class="footer_empty">
+                <h3>
+                     
+                </h3>
+            </div>
+
+            <div class="footer_main">
+                <h3>
+                    <h8>
+                        Join the Community
+                    </h8>
+                    <br>
+                    <div class="footer_socials">
+                        <div class="social_icons">
+                        <a href="/linkedin_group" target="_blank">
+                            <img src="static/img/linkedin.png">
+                        </a> 
+                        <a href="/github" target="_blank">
+                            <img src="static/img/github.png">
+                        </a>
+                        </div>
+                    </div> 
+                </h3>
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+
+</html>
