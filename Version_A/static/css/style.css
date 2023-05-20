@@ -151,7 +151,7 @@ p {
   }
   
   /* DROPDOWN MENU */
-  .services {
+  .language {
     position: relative;
   }
   
@@ -163,7 +163,8 @@ p {
     /*WITH RESPECT TO PARENT*/
     display: none;
     border-radius: 8px;
-    top: 35px;
+    top: 30px;
+    left:-25%;
   }
   
   .dropdown li+li {
@@ -180,7 +181,7 @@ p {
     background-color: #ca005d;
   } */
   
-  .services:hover .dropdown {
+  .language:hover .dropdown {
     display: block;
   }
   
