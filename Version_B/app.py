@@ -79,12 +79,24 @@ def track_time(response):
         start_time = datetime.now()
         previous_path = 'HomePage'
 
+    if request.path == '/nederlands':
+        log_data()
+        # Update start_time and previous_path
+        start_time = datetime.now()
+        previous_path = 'HomePage NL'
+
     # Every time the user requests /learn_more route, time spent in the previous path is recorded in the database with log_data(). 
     if request.path == '/About_OpenKAT':
         log_data()
         # Update start_time and previous_path
         start_time = datetime.now()
         previous_path = 'About OpenKAT'
+    
+    if request.path == '/About_OpenKAT_NL':
+        log_data()
+        # Update start_time and previous_path
+        start_time = datetime.now()
+        previous_path = 'About OpenKAT NL'
 
     if request.path == '/Experiences':
         log_data()
@@ -92,12 +104,24 @@ def track_time(response):
         start_time = datetime.now()
         previous_path = 'Experiences'
 
+    if request.path == '/Experiences_NL':
+        log_data()
+        # Update start_time and previous_path
+        start_time = datetime.now()
+        previous_path = 'Experiences NL'
+
     # Every time the user requests  /confirmation route, time spent in the previous path is recorded in the database with log_data(). 
     if request.path == '/Contact':
         log_data()
         # Update start_time and previous_path
         start_time = datetime.now()
         previous_path = 'Contact'
+    
+    if request.path == '/Contact_NL':
+        log_data()
+        # Update start_time and previous_path
+        start_time = datetime.now()
+        previous_path = 'Contact NL'
 
     if request.path == '/OpenKAT_website':
         log_data()
@@ -352,6 +376,64 @@ def track_github():
     except: pass        
 
     return redirect('https://github.com/minvws/nl-kat-coordination')
+
+
+@app.route('/nederlands')
+def homepage_nl():
+
+    try:
+        button_click = Button(
+            visitor_id=session.get('visitor_id'),
+            button=True, name='Home navbar NL')
+        
+        db.session.add(button_click)
+        db.session.commit()
+    except:
+        pass  
+    
+    return render_template('index_NL.html')
+
+@app.route('/About_OpenKAT_NL', methods=['GET'])
+def learn_more_nl():
+    but_type = request.args.get('but_type','Learn More NL')
+    try:
+        button_click = Button(
+            visitor_id=session.get('visitor_id'),
+            button=True, name = but_type)
+        db.session.add(button_click)
+        db.session.commit()
+    except:
+        pass
+    return render_template('aboutopenkat_NL.html')
+
+
+@app.route('/Experiences_NL')
+def exp_nl():
+
+    try:
+        button_click = Button(
+            visitor_id=session.get('visitor_id'),
+            button=True, name='Experiences navbar NL')
+        
+        db.session.add(button_click)
+        db.session.commit()
+    except:
+        pass  
+    
+    return render_template('Experiences_NL.html')
+
+@app.route('/Contact_NL', methods=['GET'])
+def get_in_touch_nl():
+    but_type = request.args.get('but_type','Get in Touch NL')
+    try:
+        button_click = Button(
+            visitor_id=session.get('visitor_id'),
+            button=True, name = but_type)
+        db.session.add(button_click)
+        db.session.commit()
+    except:
+        pass
+    return render_template('Contact_NL.html') 
 
 
 
