@@ -147,12 +147,14 @@ p {
 
   .menu li form input[type="submit"]:hover {
     border-radius: 5px;
-    color: #888888;
+    color: #ca005d;
   }
   
   /* DROPDOWN MENU */
   .language {
     position: relative;
+    width: 86px;
+    text-align: center;
   }
   
   .dropdown {
@@ -163,7 +165,7 @@ p {
     /*WITH RESPECT TO PARENT*/
     display: none;
     border-radius: 8px;
-    top: 30px;
+    top: 35px;
     left:-25%;
   }
   
@@ -401,6 +403,10 @@ adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*
 
   .experiences {
     background-color: whitesmoke;
+  }
+
+  .language {
+    width: auto;
   }
 
   /* For the website body */
