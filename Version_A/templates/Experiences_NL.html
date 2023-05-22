@@ -1,135 +1,140 @@
 {% extends 'base_NL.html' %}
 {% block body %}
-    <div class="header">
-        <h2>Ervaringen</h2>
-        <h3>Uitspraken van partners</h3>
-    </div>
+<div class="header">
+    <h2>Ervaringen</h2>
+    <h3>Uitspraken van partners</h3>
+</div>
 
-    <!-- html for responsive carousel adapted from
+<!-- html for responsive carousel adapted from
     https://codepen.io/jh3y/pen/WwVKLN -->
-    <div class="carousel-row">
-        <div class="carousel-container">
-            <div class="carousel my-carousel carousel--translate">
-                <input class="carousel__activator" type="radio" name="carousel" id="F" checked="checked" />
-                <input class="carousel__activator" type="radio" name="carousel" id="G" />
-                <input class="carousel__activator" type="radio" name="carousel" id="H" />
-                <div class="carousel__controls">
-                    <label class="carousel__control carousel__control--backward" for="H"></label>
-                    <label class="carousel__control carousel__control--forward" for="G"></label>
-                </div>
-                <div class="carousel__controls">
-                    <label class="carousel__control carousel__control--backward" for="F"></label>
-                    <label class="carousel__control carousel__control--forward" for="H"></label>
-                </div>
-                <div class="carousel__controls">
-                    <label class="carousel__control carousel__control--backward" for="G"></label>
-                    <label class="carousel__control carousel__control--forward" for="F"></label>
-                </div>
-                <div class="carousel__track">
-                    <li class="carousel__slide">
-                        <!-- <h1>F</h1> -->
-                        <div class="side_panels">
-                            <h3 class="rectangle">
-                                <div class="inner" style="padding: 1.5vw;">
-                                    <img src="static/img/zcert.logo.png" alt="Z-Cert"
-                                        style="width: 21vw; height: 7vw; margin-top: 1vw;">
-                                    <br>
-                                    <p style="margin-top: 3.15vw;">“The great thing about KAT is that we can closely
-                                        follow the development of security and vulnerabilities that are often missed. We
-                                        see in practice how systems improve quickly through continuous monitoring. All
-                                        this without a negative privacy aftertaste.”</p>
-                            </h3>
-                        </div>
-                    </li>
-                    <li class="carousel__slide">
-                        <!-- <h1>G</h1> -->
-                        <div class="middle_panels">
-                            <h3 class="rectangle">
-                                <div class="inner" style="padding: 1.5vw;">
-                                    <img src="static/img/logo-cert.png" alt="Cert"
-                                        style="width: 19.5vw; height: 9.2vw; margin-top: 1vw;">
-                                    <br>
-                                    <p style="margin: 1vw;">“There are a lot of powerful open-source tools on the market
-                                        that are very strong in themselves at performing a specific action. But what if
-                                        all these tools could be properly integrated with each other? What if these
-                                        tools together form a powerful scanner to detect all kinds of vulnerabilities?
-                                        That is what the developers of OpenKAT had in mind when developing this tool”
-                                    <p>
-                            </h3>
-                        </div>
-                    </li>
-                    <li class="carousel__slide">
-                        <!-- <h1>H</h1> -->
-                        <div class="side_panels">
-                            <h3 class="rectangle">
-                                <div class="inner" style="padding: 1.5vw;">
-                                    <img src="static/img/logo-sidn.svg" alt="SIDN" style="width: 9.5vw; height: 9.5vw;">
-                                    <br>
-                                    <p style="margin-top: 1.6vw;">“I see the software as suitable for compliance testing
-                                        in all sorts of settings. The crucial thing is to keep the existing partnerships
-                                        going”</p>
-                            </h3>
-                        </div>
-                    </li>
-                    <li class="carousel__slide">
-                        <h1>I</h1>
-                    </li>
-                    <li class="carousel__slide">
-                        <h1>J</h1>
-                    </li>
-                </div>
-                <div class="carousel__indicators">
-                    <label class="carousel__indicator" for="F"></label>
-                    <label class="carousel__indicator" for="G"></label>
-                    <label class="carousel__indicator" for="H"></label>
-                </div>
+<div class="carousel-row">
+    <div class="carousel-container">
+        <div class="carousel my-carousel carousel--translate">
+            <input class="carousel__activator" type="radio" name="carousel" id="F" checked="checked" />
+            <input class="carousel__activator" type="radio" name="carousel" id="G" />
+            <input class="carousel__activator" type="radio" name="carousel" id="H" />
+            <div class="carousel__controls">
+                <label class="carousel__control carousel__control--backward" for="H"></label>
+                <label class="carousel__control carousel__control--forward" for="G"></label>
+            </div>
+            <div class="carousel__controls">
+                <label class="carousel__control carousel__control--backward" for="F"></label>
+                <label class="carousel__control carousel__control--forward" for="H"></label>
+            </div>
+            <div class="carousel__controls">
+                <label class="carousel__control carousel__control--backward" for="G"></label>
+                <label class="carousel__control carousel__control--forward" for="F"></label>
+            </div>
+            <div class="carousel__track">
+                <li class="carousel__slide">
+                    <!-- <h1>F</h1> -->
+                    <div class="side_panels">
+                        <h3 class="rectangle">
+                            <div class="inner" style="padding: 1.5vw;">
+                                <img src="static/img/zcert.logo.png" alt="Z-Cert"
+                                    style="width: 21vw; height: 7vw; margin-top: 1vw;">
+                                <br>
+                                <p style="margin-top: 3.15vw;">“Het mooie aan KAT is dat we de ontwikkeling van
+                                    beveiliging goed kunnen volgen en kwetsbaarheden die vaak gemist worden. We zien zo
+                                    in de praktijk hoe systemen door continue monitoring snel verbeteren. Dit alles
+                                    zonder een negatieve privacy bijsmaak.”
+                                </p>
+                        </h3>
+                    </div>
+                </li>
+                <li class="carousel__slide">
+                    <!-- <h1>G</h1> -->
+                    <div class="middle_panels">
+                        <h3 class="rectangle">
+                            <div class="inner" style="padding: 1.5vw;">
+                                <img src="static/img/logo-cert.png" alt="Cert"
+                                    style="width: 19.5vw; height: 9.2vw; margin-top: 1vw;">
+                                <br>
+                                <p style="margin: 1vw;">“Er zijn ontzettend veel krachtige open-source tools op de markt
+                                    die op zichzelf ontzettend sterk zijn in het uitvoeren van een specifieke handeling.
+                                    Maar wat als al deze tools nou eens goed met elkaar geïntegreerd konden worden? Wat
+                                    als deze tools samen een krachtige scanner vormen om allerhande kwetsbaarheden te
+                                    detecteren? Dat is wat de ontwikkelaars van OpenKAT voor ogen hadden tijdens het
+                                    ontwikkelen van deze tool.”
+
+                                <p>
+                        </h3>
+                    </div>
+                </li>
+                <li class="carousel__slide">
+                    <!-- <h1>H</h1> -->
+                    <div class="side_panels">
+                        <h3 class="rectangle">
+                            <div class="inner" style="padding: 1.5vw;">
+                                <img src="static/img/logo-sidn.svg" alt="SIDN" style="width: 9.5vw; height: 9.5vw;">
+                                <br>
+                                <p style="margin-top: 1.6vw;">“Maar ook anderen kunnen deze software voor hun
+                                    compliance-tests inzetten. Crucial is dat de bestaande samenwerkingsverbanden
+                                    blijven bestaan."
+                                </p>
+                            </div>
+                        </h3>
+                    </div>
+                </li>
+                <li class="carousel__slide">
+                    <h1>I</h1>
+                </li>
+                <li class="carousel__slide">
+                    <h1>J</h1>
+                </li>
+            </div>
+            <div class="carousel__indicators">
+                <label class="carousel__indicator" for="F"></label>
+                <label class="carousel__indicator" for="G"></label>
+                <label class="carousel__indicator" for="H"></label>
             </div>
         </div>
     </div>
+</div>
 
-    <div class="row experiences">
-        <div class="top_bottom">
+<div class="row experiences">
+    <div class="top_bottom">
+        <h3>
+            OpenKAT wordt vertrouwd door
+        </h3>
+    </div>
+    <div class="row">
+        <div class="bottom_side">
             <h3>
-                OpenKAT wordt vertrouwd door
+                <a href="/Government_website" target="_blank"><img src="static/img/government_NL.png"></a>
             </h3>
         </div>
-        <div class="row">
-            <div class="bottom_side">
-                <h3>
-                    <a href="/Government_website" target="_blank"><img src="static/img/government_NL.png"></a>
-                </h3>
-            </div>
 
-            <div class="middle_bottom">
-                <h3>
-                    <a href="/Kennisnet_website" target="_blank"><img src="static/img/Kennisnet.png"></a>
-                </h3>
-            </div>
+        <div class="middle_bottom">
+            <h3>
+                <a href="/Kennisnet_website" target="_blank"><img src="static/img/Kennisnet.png"></a>
+            </h3>
+        </div>
 
-            <div class="bottom_side">
-                <h3 class="bottom_left">
-                    <a href="/BDO_website" target="_blank"><img src="static/img/BDO.webp"></a>
-                </h3>
-            </div>
+        <div class="bottom_side">
+            <h3 class="bottom_left">
+                <a href="/BDO_website" target="_blank"><img src="static/img/BDO.webp"></a>
+            </h3>
+        </div>
 
-            <div class="bottom_side">
-                <h3>
-                    <a href="/Bravis_website" target="_blank"><img src="static/img/bravis.png"></a>
-                </h3>
-            </div>
+        <div class="bottom_side">
+            <h3>
+                <a href="/Bravis_website" target="_blank"><img src="static/img/bravis.png"></a>
+            </h3>
+        </div>
 
-            <div class="middle_bottom">
-                <h3>
-                    <a href="/Catharina_website" target="_blank"><img src="static/img/catharina.svg"></a>
-                </h3>
-            </div>
+        <div class="middle_bottom">
+            <h3>
+                <a href="/Catharina_website" target="_blank"><img src="static/img/catharina.svg"></a>
+            </h3>
+        </div>
 
-            <div class="bottom_side">
-                <h3 class="bottom_left">
-                    <a href="/SDB_website" target="_blank"><img src="static/img/sdb.jpg"></a>
-                </h3>
-            </div>
+        <div class="bottom_side">
+            <h3 class="bottom_left">
+                <a href="/SDB_website" target="_blank"><img src="static/img/sdb.jpg"></a>
+            </h3>
         </div>
     </div>
+</div>
 
 {% endblock %}
