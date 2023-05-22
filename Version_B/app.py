@@ -194,13 +194,13 @@ def index():
     
     return render_template('index.html')
 
-@app.route('/')
+@app.route('/', methods=['GET'])
 def homepage():
-
+    but_type = request.args.get('but_type','Home navbar')
     try:
         button_click = Button(
             visitor_id=session.get('visitor_id'),
-            button=True, name='Home navbar')
+            button=True, name= but_type)
         
         db.session.add(button_click)
         db.session.commit()
@@ -378,13 +378,13 @@ def track_github():
     return redirect('https://github.com/minvws/nl-kat-coordination')
 
 
-@app.route('/nederlands')
+@app.route('/nederlands', methods=['GET'])
 def homepage_nl():
-
+    but_type = request.args.get('but_type','Home navbar NL')
     try:
         button_click = Button(
             visitor_id=session.get('visitor_id'),
-            button=True, name='Home navbar NL')
+            button=True, name= but_type)
         
         db.session.add(button_click)
         db.session.commit()
