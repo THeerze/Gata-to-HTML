@@ -49,7 +49,7 @@ def log_data():
         time_spent = (datetime.now() - start_time).total_seconds()
 
         # 0 seconds is the threshold to save the time spent in the database. It is to eliminate recording repetitive page requests/reloads. 
-        if time_spent > 0:
+        if time_spent > 2:
             page_view = PageView(
                 visitor_id=session.get('visitor_id'),
                 page=previous_path,
@@ -110,7 +110,6 @@ def track_time(response):
         start_time = datetime.now()
         previous_path = 'Experiences NL'
 
-    # Every time the user requests  /confirmation route, time spent in the previous path is recorded in the database with log_data(). 
     if request.path == '/Contact':
         log_data()
         # Update start_time and previous_path
@@ -176,6 +175,15 @@ def track_time(response):
         # Update start_time and previous_path
         start_time = datetime.now()
         previous_path = 'GitHub'
+
+        # Every time the user requests  /confirmation route, time spent in the previous path is recorded in the database with log_data(). 
+    if request.path == '/confirmation':
+        log_data()
+        # Update start_time and previous_path
+        try:
+            del start_time, previous_path
+        except:
+            pass
     
     return response
 
@@ -441,6 +449,21 @@ def get_in_touch_nl():
     except:
         pass
     return render_template('Contact_NL.html') 
+
+@app.route('/confirmation')
+def confirmation():
+
+    try:
+        button_click = Button(
+            visitor_id=session.get('visitor_id'),
+            button=True, name='confirmation button')
+        
+        db.session.add(button_click)
+        db.session.commit()
+    except:
+        pass  
+    
+    return render_template('confirmation.html')
 
 
 

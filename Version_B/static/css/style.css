@@ -230,6 +230,16 @@ p {
   padding-left: 3vw;
 }
 
+/* Additional CSS for the thin header */
+.thin-header {
+  background-color: #f2f2f2;
+  padding: 8px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
 
 /*columns for content attempt
 adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_media3*/
