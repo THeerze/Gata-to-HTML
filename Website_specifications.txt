@@ -29,7 +29,7 @@ where the B version's design bears more similarities to that of a "traditional" 
 
 ==Content==
 Phase 1 - Basic explanatory website of OpenKAT, using easy-to-understand language - Completed
-Phase 2 - Addition of step-by-step OpenKAT installation guide and video tutorials
+Phase 2 - Addition of step-by-step OpenKAT installation guide + video tutorials, and OpenKAT success stories
 
 
 ==Design==
