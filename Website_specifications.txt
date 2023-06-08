@@ -1,0 +1,70 @@
+==Overview==
+The website OpenGÁTA is developed by project group Gáta, comprised of BSc Computational Social Science students at the University of Amsterdam.
+The goal of this website is to explain OpenKAT - a cybersecurity tool developed by the Dutch Ministry of Health -
+in layman's terms, in order to make it more accessible/marketable. 
+Two variations of this website have been made to be used in A/B testing, one featuring OpenKAT's design language,
+where the B version's design bears more similarities to that of a "traditional" cybersecurity tool.
+The team has written all the of the HTML/CSS code from scratch - apart from some snippets of code from external sources,
+and adapted the Python Flask code provided to them, in order to track the time spent on specific pages,
+as well as the buttons users click and how often they do so.
+The website is targeted at both the IT department of healthcare organisations, as well as the board of these organisations, 
+in order to make OpenKAT more easily understandable/marketable.
+
+
+==Team==
+Project group Gáta consists of the following members, all students of the BSc Computational Social Science at UvA:
+Yehia Amr Farouk
+Dmitry Golovchits
+Teun Heerze 
+Diana Mišíková 
+Ella Sartory 
+
+
+==Objectives==
+The goal of this website is to explain OpenKAT - a cybersecurity tool developed by the Dutch Ministry of Health -
+in layman's terms, in order to make it more accessible/marketable. 
+Two variations of this website have been made to be used in A/B testing, one featuring OpenKAT's design language,
+where the B version's design bears more similarities to that of a "traditional" cybersecurity tool.
+
+
+==Content==
+Phase 1 - Basic explanatory website of OpenKAT, using easy-to-understand language - Completed
+Phase 2 - Addition of step-by-step OpenKAT installation guide and video tutorials
+
+
+==Design==
+See Gáta Project Report Appendix C
+
+
+==Functionality==
+The website runs on a Python Flask server, that is also responsible for the user tracking.
+This tracking is done based on a randomly generated user ID that should be added in the URL upon first visit in order to work.
+The ID is added in the following syntax: [website.url]/?uid=[ID] where the sections in square brackets depend on the implementation.
+
+
+==Browser support==
+The website should be compatible with most modern browsers, as of writing on the 8th of June 2023.
+Support from mobile devices is built-in, however the best user experience is still on a desktop or laptop.
+
+
+==Web hosting==
+The website is required to be hosted with a hosting provider capable of hosting Python Flask applications, however the webpages
+could theoretically be reverted back to their original pure HTML/CSS form if needed.
+
+
+==Milestones==
+Website specification - Completed
+Wireframing - Completed
+Development - Completed
+Testing + Feedback - Completed
+Launch - Pending
+
+
+==Deadlines==
+Website specification - March 17th 2023
+Wireframing - March 21st 2023
+Development Version A - March 31st 2023
+Development Version B - May 17th 2023
+Conduct A/B Testing - June 2nd 2023
+Finalisation - 9th of June 2023
+Launch - TBD
