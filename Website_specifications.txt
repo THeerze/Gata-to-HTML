@@ -1,7 +1,7 @@
 ==Overview==
 The website OpenGÁTA is developed by project group Gáta, comprised of BSc Computational Social Science students at the University of Amsterdam.
 The goal of this website is to explain OpenKAT - a cybersecurity tool developed by the Dutch Ministry of Health -
-in layman's terms, in order to make it more accessible/marketable. 
+in easy-to-understand language, in order to make it more accessible/marketable. 
 Two variations of this website have been made to be used in A/B testing, one featuring OpenKAT's design language,
 where the B version's design bears more similarities to that of a "traditional" cybersecurity tool.
 The team has written all the of the HTML/CSS code from scratch - apart from some snippets of code from external sources,
